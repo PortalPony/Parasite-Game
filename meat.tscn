@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8q77qore7whf"]
+
+[ext_resource type="Script" path="res://meat.gd" id="1_0vi2r"]
+[ext_resource type="PackedScene" uid="uid://pbhh1w844yta" path="res://Interactions/Interactions area/Interactions area3D.tscn" id="1_tnavx"]
+
+
+[sub_resource type="BoxMesh" id="BoxMesh_sxw57"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7lm0g"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7f4ga"]
+radius = 2.0
+
+[node name="Meat" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_sxw57")
+script = ExtResource("1_0vi2r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_7lm0g")
+
+[node name="InteractionsArea3d" parent="." instance=ExtResource("1_tnavx")]
+action_name = "EAT!"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionsArea3d"]
+shape = SubResource("SphereShape3D_7f4ga")

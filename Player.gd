@@ -19,6 +19,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
+	#Player Movement
 	var input := Vector3.ZERO
 	input.z = Input.get_axis("Forward", "Back")
 	input.x = Input.get_axis("Left", "Right")
@@ -27,9 +29,11 @@ func _process(delta: float) -> void:
 	
 	var aligned_force = twist_pivot.basis * input
 	
+	#Espcape Key
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		
+	
+	#Player Camera
 	twist_pivot.rotate_y(twist_input)
 	pitch_pivot.rotate_x(pitch_input)
 	pitch_pivot.rotation.x = clamp(pitch_pivot.rotation.x, 
@@ -39,6 +43,9 @@ func _process(delta: float) -> void:
 	twist_input = 0.0
 	pitch_input = 0.0
 	
+	
+	
+	#Scale Player
 	player_collisonShape.set_scale(Vector3(scale_size, scale_size, scale_size))
 	player_mesh.set_scale(Vector3(scale_size, scale_size, scale_size)) 
 	twist_pivot.set_scale(Vector3(scale_size, scale_size, scale_size))
