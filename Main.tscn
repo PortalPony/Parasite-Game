@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://nwcnh3sm2810"]
+
+[ext_resource type="PackedScene" uid="uid://ci4auy4bbb130" path="res://Parasite-Game/Floor.tscn" id="1_ookmp"]
+[ext_resource type="PackedScene" uid="uid://cso4g2urypi3c" path="res://Parasite-Game/TEST .tscn" id="2_xtsrc"]
+[ext_resource type="PackedScene" uid="uid://xbg10kd43di2" path="res://Parasite-Game/player.tscn" id="3_ju67j"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_33o04"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_mmobm"]
+sky_material = SubResource("ProceduralSkyMaterial_33o04")
+
+[sub_resource type="Environment" id="Environment_d78wb"]
+background_mode = 2
+sky = SubResource("Sky_mmobm")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_d78wb")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" parent="." instance=ExtResource("1_ookmp")]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_xtsrc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.69995, 0)
+
+[node name="Player" parent="." instance=ExtResource("3_ju67j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.32897, 1.88494, 2.27265)
