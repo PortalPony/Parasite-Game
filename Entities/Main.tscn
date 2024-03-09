@@ -41,5 +41,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0855541, 0, 0.223198)
 
 [node name="Enemy" parent="Floor" instance=ExtResource("4_1m8d8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48513, 1.90828, -77.8334)
-up_direction = Vector3(0.816538, 0.577292, 0)
 player_path = NodePath("../../Player")

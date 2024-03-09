@@ -10,7 +10,7 @@ var sc_rate = 1
 
 @onready var twist_pivot := $TwistPivot
 @onready var pitch_pivot := $TwistPivot/PitchPivot
-@onready var player_mesh = $MeshInstance3D
+#@onready var player_mesh = $MeshInstance3D 
 @onready var player_collisonShape = $CollisionShape3D
 
 func _ready() -> void:
