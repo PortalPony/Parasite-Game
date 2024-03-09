@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbl32ia3q2poq"]
+
+[ext_resource type="Script" path="res://Parasite-Game/Interactions/InteractionManager.gd" id="1_my0sp"]
+
+[node name="InteractionManager" type="Node3D"]
+script = ExtResource("1_my0sp")
+
+[node name="Label" type="Label3D" parent="."]
+text = "[E] Spread The Infection"

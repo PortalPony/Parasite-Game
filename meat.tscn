@@ -21,6 +21,7 @@ script = ExtResource("1_0vi2r")
 shape = SubResource("ConcavePolygonShape3D_7lm0g")
 
 [node name="InteractionsArea3d" parent="." instance=ExtResource("1_tnavx")]
+collision_layer = 2
 action_name = "EAT!"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionsArea3d"]

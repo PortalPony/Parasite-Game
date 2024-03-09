@@ -5,7 +5,7 @@ extends Node3D
 @onready var label = $Label
 
 
-const base_text = "[E]"
+const base_text = "[E] "
 
 
 var active_areas = []
@@ -13,7 +13,7 @@ var can_interact = true
 
 func register_area(area: InteractionArea):
 	active_areas.push_back(area)
-	
+
 
 func unregister_area(area: InteractionArea):
 	var index = active_areas.find(area)
