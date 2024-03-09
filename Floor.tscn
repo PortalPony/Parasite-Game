@@ -3,8 +3,8 @@
 [sub_resource type="PlaneMesh" id="PlaneMesh_gd4ne"]
 size = Vector2(100, 100)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_e75um"]
-data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0, -5)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ibswv"]
+data = PackedVector3Array(50, 0, 50, -50, 0, 50, 50, 0, -50, -50, 0, 50, -50, 0, -50, 50, 0, -50)
 
 [node name="Floor" type="MeshInstance3D"]
 mesh = SubResource("PlaneMesh_gd4ne")
@@ -12,4 +12,4 @@ mesh = SubResource("PlaneMesh_gd4ne")
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_e75um")
+shape = SubResource("ConcavePolygonShape3D_ibswv")
