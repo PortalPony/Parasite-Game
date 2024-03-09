@@ -14,6 +14,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func on_interact():
-	target.scale_size += 0.1
+	target.scale_size += 1
 	queue_free()
 

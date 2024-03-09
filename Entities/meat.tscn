@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://c8q77qore7whf"]
 
-[ext_resource type="Script" path="res://Parasite-Game/meat.gd" id="1_0vi2r"]
+[ext_resource type="Script" path="res://Parasite-Game/Entities/meat.gd" id="1_0vi2r"]
 [ext_resource type="PackedScene" uid="uid://pbhh1w844yta" path="res://Parasite-Game/Interactions/Interactions area/Interactions area3D.tscn" id="1_tnavx"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_sxw57"]
