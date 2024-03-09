@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1710020989
+drone.tscn::PackedScene::1465792686241247109::1710020648::0::1::::<><>::res://Drone.gd
+enemy_1.tscn::PackedScene::8155561552148402481::1710020648::0::1::::<><>::
+Floor.tscn::PackedScene::5394256092642866225::1710020648::0::1::::<><>::
+icon.svg::CompressedTexture2D::8574943790063028770::1710020668::1710020672::1::::<><>::
+Main.tscn::PackedScene::958016338942981225::1710020743::0::1::::<><>::uid://ci4auy4bbb130::::res://Floor.tscn<>uid://xbg10kd43di2::::res://player.tscn<>uid://c8q77qore7whf::::res://meat.tscn<>uid://dogu530owkhg0::::res://enemy_1.tscn<>uid://cecfnro4s8wr3::::res://test_rod.tscn
+meat.gd::GDScript::-1::1710020648::0::1::::<>MeshInstance3D<>::
+meat.tscn::PackedScene::7124104203459605803::1710020774::0::1::::<><>::res://meat.gd<>uid://pbhh1w844yta::::res://Interactions/Interactions area/Interactions area3D.tscn
+Player.gd::GDScript::-1::1710020648::0::1::::<>RigidBody3D<>::
+player.tscn::PackedScene::1616819842734892743::1710020724::0::1::::<><>::res://Player.gd
+TEST .tscn::PackedScene::6066914798812894962::1710020648::0::1::::<><>::
+test_rod.tscn::PackedScene::5058053213598265854::1710020648::0::1::::<><>::
+::res://assets/::1710020985
+::res://entities/::1710020989
+::res://Interactions/::1710020648
+InteractionManger.gd::GDScript::-1::1710020648::0::1::::<>Node3D<>::
+InteractionManger.tscn::PackedScene::1308829018821847145::1710020648::0::1::::<><>::res://Parasite-Game/Interactions/InteractionManger.gd
+::res://Interactions/Interactions area/::1710020648
+Interactions area3D.gd::GDScript::-1::1710020648::0::1::::InteractionArea<>Area3D<>::
+Interactions area3D.tscn::PackedScene::1055335952963336894::1710020648::0::1::::<><>::res://Parasite-Game/Interactions/Interactions area/Interactions area3D.gd
+::res://prototype/::1710020887
