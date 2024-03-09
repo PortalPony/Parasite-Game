@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://xbg10kd43di2"]
 
 [ext_resource type="Script" path="res://Parasite-Game/Player.gd" id="1_2uqsh"]
-[ext_resource type="PackedScene" uid="uid://odkd0qefduln" path="res://Parasite-Game/Models/Crab.glb" id="2_q8l43"]
+[ext_resource type="PackedScene" uid="uid://odkd0qefduln" path="res://Models/Crab.glb" id="2_vln03"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pjaec"]
 size = Vector3(6.43024, 2.70921, 4.88684)
@@ -21,7 +21,7 @@ shape = SubResource("BoxShape3D_pjaec")
 [node name="TwistPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.187211, 0)
 
-[node name="Crab" parent="TwistPivot" instance=ExtResource("2_q8l43")]
+[node name="Crab" parent="TwistPivot" instance=ExtResource("2_vln03")]
 transform = Transform3D(-0.1, -2.25001e-16, -1.50996e-08, 0, 0.1, -1.49012e-09, 1.50996e-08, -1.49012e-09, -0.1, 0, -0.2, 0)
 
 [node name="PitchPivot" type="Node3D" parent="TwistPivot"]
