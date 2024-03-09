@@ -1,13 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c8q77qore7whf"]
 
-<<<<<<< HEAD:Entities/meat.tscn
 [ext_resource type="Script" path="res://Parasite-Game/Entities/meat.gd" id="1_0vi2r"]
 [ext_resource type="PackedScene" uid="uid://pbhh1w844yta" path="res://Parasite-Game/Interactions/Interactions area/Interactions area3D.tscn" id="1_tnavx"]
-=======
-[ext_resource type="Script" path="res://meat.gd" id="1_0vi2r"]
-[ext_resource type="PackedScene" uid="uid://pbhh1w844yta" path="res://Interactions/Interactions area/Interactions area3D.tscn" id="1_tnavx"]
-
->>>>>>> a967873bb7ded8363219898aa84300442485a574:meat.tscn
 
 [sub_resource type="BoxMesh" id="BoxMesh_sxw57"]
 

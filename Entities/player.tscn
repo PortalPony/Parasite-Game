@@ -15,7 +15,7 @@ script = ExtResource("1_2uqsh")
 [node name="Visuals" type="Node3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.0167542, 0.109629, 0.0640259)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0167542, 0.109629, 0.0640259)
 shape = SubResource("BoxShape3D_pjaec")
 
 [node name="TwistPivot" type="Node3D" parent="."]
@@ -28,4 +28,4 @@ transform = Transform3D(-1, -2.25002e-15, -1.50996e-07, 0, 1, -1.49012e-08, 1.50
 transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="TwistPivot/PitchPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.73278, 0.680465, 0, -0.680465, 0.73278, 0, 6.34694, 6.85643)
+transform = Transform3D(1, 0, 0, 0, 0.78858, 0.614932, 0, -0.614932, 0.78858, 0, 9.4324, 7.90143)
