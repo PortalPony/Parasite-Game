@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cktceej0hsjos"]
 
-[ext_resource type="Script" path="res://Parasite-Game/Entities/Enemy.gd" id="1_eqwv4"]
+[ext_resource type="Script" path="res://Entities/Enemy.gd" id="1_eqwv4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwuel"]
 albedo_color = Color(0.572549, 0.141176, 0, 1)

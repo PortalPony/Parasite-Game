@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqtk3huiv2sgn"
-path.s3tc="res://.godot/imported/Crab_crab_albedo.jpg-b837893beced26e522a923dfc4e0abf2.s3tc.ctex"
+uid="uid://w4fmbe43far7"
+path.s3tc="res://.godot/imported/ComputerConsole_computer_console_albedo.jpg-24170bfc3d58fe4008f960f98154c1f3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/Crab_crab_albedo.jpg"
-dest_files=["res://.godot/imported/Crab_crab_albedo.jpg-b837893beced26e522a923dfc4e0abf2.s3tc.ctex"]
+source_file="res://Models/ComputerConsole_computer_console_albedo.jpg"
+dest_files=["res://.godot/imported/ComputerConsole_computer_console_albedo.jpg-24170bfc3d58fe4008f960f98154c1f3.s3tc.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://pbhh1w844yta"]
 
-[ext_resource type="Script" path="res://Parasite-Game/Interactions/Interactions area/Interactions Area.gd" id="1_rrolm"]
+[ext_resource type="Script" path="res://Interactions/Interactions area/Interactions Area.gd" id="1_rrolm"]
 
 [node name="Interactions Area" type="Area3D"]
 collision_layer = 0

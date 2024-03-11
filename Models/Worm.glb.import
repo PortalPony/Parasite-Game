@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://odkd0qefduln"
-path="res://.godot/imported/Crab.glb-747715ea134869ee3cfd3c2f323446b1.scn"
+uid="uid://bo2vdwlrt573u"
+path="res://.godot/imported/Worm.glb-3e8158c4d6ee8ed7c84e2c762c3ebf36.scn"
 
 [deps]
 
-source_file="res://Models/Crab.glb"
-dest_files=["res://.godot/imported/Crab.glb-747715ea134869ee3cfd3c2f323446b1.scn"]
+source_file="res://Models/Worm.glb"
+dest_files=["res://.godot/imported/Worm.glb-3e8158c4d6ee8ed7c84e2c762c3ebf36.scn"]
 
 [params]
 

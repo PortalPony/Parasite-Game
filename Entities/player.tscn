@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://xbg10kd43di2"]
 
-[ext_resource type="Script" path="res://Parasite-Game/Entities/Player.gd" id="1_2uqsh"]
-[ext_resource type="PackedScene" uid="uid://odkd0qefduln" path="res://Parasite-Game/Models/Crab.glb" id="2_q8l43"]
+[ext_resource type="Script" path="res://Entities/Player.gd" id="1_2uqsh"]
+[ext_resource type="PackedScene" uid="uid://odkd0qefduln" path="res://Models/Crab.glb" id="2_q8l43"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pjaec"]
 size = Vector3(6.43024, 2.70921, 4.88684)

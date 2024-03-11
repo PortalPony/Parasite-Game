@@ -1,0 +1,87 @@
+[gd_scene load_steps=10 format=3 uid="uid://f2ybmriwskkl"]
+
+[ext_resource type="Script" path="res://_prototype/player.gd" id="1_lmvu0"]
+[ext_resource type="PackedScene" uid="uid://c3g1y0euvk30j" path="res://_prototype/human.tscn" id="2_b4lk5"]
+
+[sub_resource type="Gradient" id="Gradient_vdgue"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jmd8g"]
+gradient = SubResource("Gradient_vdgue")
+
+[sub_resource type="Gradient" id="Gradient_j0cn0"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_na15q"]
+gradient = SubResource("Gradient_j0cn0")
+
+[sub_resource type="Gradient" id="Gradient_t4fcd"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3lxab"]
+gradient = SubResource("Gradient_t4fcd")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w01ao"]
+size = Vector3(0.5, 2, 0.5)
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_lmvu0")
+
+[node name="Human" parent="." instance=ExtResource("2_b4lk5")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.707107, -0.353553, 0.612372, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 10, 10, 10)
+keep_aspect = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Camera3D/CanvasLayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="Camera3D/CanvasLayer/HSplitContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Label" type="Label" parent="Camera3D/CanvasLayer/HSplitContainer/MarginContainer2"]
+layout_mode = 2
+text = "HP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer/HSplitContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 768
+theme_override_constants/margin_bottom = 16
+
+[node name="Under" type="TextureProgressBar" parent="Camera3D/CanvasLayer/HSplitContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+value = 60.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_jmd8g")
+texture_progress = SubResource("GradientTexture1D_na15q")
+
+[node name="Over" type="TextureProgressBar" parent="Camera3D/CanvasLayer/HSplitContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+value = 50.0
+nine_patch_stretch = true
+texture_progress = SubResource("GradientTexture1D_3lxab")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_w01ao")
+
+[node name="InfestPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06, 1.6, 0)

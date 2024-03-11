@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://nwcnh3sm2810"]
 
-[ext_resource type="PackedScene" uid="uid://ci4auy4bbb130" path="res://Parasite-Game/Entities/Floor.tscn" id="1_ookmp"]
-[ext_resource type="PackedScene" uid="uid://xbg10kd43di2" path="res://Parasite-Game/Entities/player.tscn" id="3_ju67j"]
-[ext_resource type="PackedScene" uid="uid://c8q77qore7whf" path="res://Parasite-Game/Entities/meat.tscn" id="4_0bnm4"]
-[ext_resource type="PackedScene" uid="uid://cktceej0hsjos" path="res://Parasite-Game/Entities/Enemy.tscn" id="4_1m8d8"]
+[ext_resource type="PackedScene" uid="uid://ci4auy4bbb130" path="res://Entities/Floor.tscn" id="1_ookmp"]
+[ext_resource type="PackedScene" uid="uid://xbg10kd43di2" path="res://Entities/player.tscn" id="3_ju67j"]
+[ext_resource type="PackedScene" uid="uid://c8q77qore7whf" path="res://Entities/meat.tscn" id="4_0bnm4"]
+[ext_resource type="PackedScene" uid="uid://cktceej0hsjos" path="res://Entities/Enemy.tscn" id="4_1m8d8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_33o04"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -41,4 +41,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0855541, 0, 0.223198)
 
 [node name="Enemy" parent="Floor" instance=ExtResource("4_1m8d8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48513, 1.90828, -77.8334)
+up_direction = Vector3(0.816538, 0.577292, 0)
 player_path = NodePath("../../Player")
