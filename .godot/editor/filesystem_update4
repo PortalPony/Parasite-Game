@@ -1,7 +1,8 @@
-res://_prototype/level_test.tscn
-res://_prototype/enemy.tscn
-res://_prototype/player.tscn
-res://_prototype/enemy.gd
-res://_prototype/level_test.gd
-res://_prototype/health_component.gd
-res://_prototype/player_health_component.gd
+res://levels/level_0_tutorial.tscn
+res://levels/tutorial/tutorial_trigger.gd
+res://levels/tutorial/tutorial_trigger.tscn
+res://entities/player/player.tscn
+res://entities/player/player_camera.gd
+res://entities/enemy/enemy.tscn
+res://entities/enemy/enemy.gd
+res://entities/player/player.gd

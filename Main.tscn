@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://nwcnh3sm2810"]
 
-[ext_resource type="PackedScene" uid="uid://ci4auy4bbb130" path="res://Entities/Floor.tscn" id="1_ookmp"]
-[ext_resource type="PackedScene" uid="uid://xbg10kd43di2" path="res://player.tscn" id="3_ju67j"]
-[ext_resource type="PackedScene" uid="uid://c8q77qore7whf" path="res://Entities/meat.tscn" id="4_0bnm4"]
-[ext_resource type="PackedScene" uid="uid://cktceej0hsjos" path="res://Entities/Enemy.tscn" id="5_a2g6u"]
+[ext_resource type="PackedScene" uid="uid://ci4auy4bbb130" path="res://_old/Floor.tscn" id="1_ookmp"]
+[ext_resource type="PackedScene" uid="uid://xbg10kd43di2" path="res://_old/player.tscn" id="3_ju67j"]
+[ext_resource type="PackedScene" uid="uid://c8q77qore7whf" path="res://_old/meat.tscn" id="4_0bnm4"]
+[ext_resource type="PackedScene" uid="uid://cktceej0hsjos" path="res://_old/Enemy.tscn" id="5_a2g6u"]
 [ext_resource type="PackedScene" path="res://test_rod.tscn" id="5_bl3uk"]
 
 

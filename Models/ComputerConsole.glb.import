@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c5uuqbxr4h7m4"
-path="res://.godot/imported/ComputerConsole.glb-d5936ffcc86853f656e6eacfb0bc20b5.scn"
+path="res://.godot/imported/ComputerConsole.glb-296d8a4861c6a03095cce81920deb8b1.scn"
 
 [deps]
 
-source_file="res://Models/ComputerConsole.glb"
-dest_files=["res://.godot/imported/ComputerConsole.glb-d5936ffcc86853f656e6eacfb0bc20b5.scn"]
+source_file="res://models/ComputerConsole.glb"
+dest_files=["res://.godot/imported/ComputerConsole.glb-296d8a4861c6a03095cce81920deb8b1.scn"]
 
 [params]
 

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://clmh8htdc7l87"]
+
+[ext_resource type="Script" path="res://levels/tutorial/tutorial_trigger.gd" id="1_88ncg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2tpth"]
+size = Vector3(10, 8, 10)
+
+[node name="Area3D" type="Area3D"]
+script = ExtResource("1_88ncg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_2tpth")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+custom_minimum_size = Vector2(300, 180)
+offset_right = 300.0
+offset_bottom = 160.0
+text = "[instruction text here, that will be split over multiple lines]"
+vertical_alignment = 1
+autowrap_mode = 2

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdco5lysxxihi"
-path.s3tc="res://.godot/imported/Worm (1)_maggot_albedo.jpg-c5fa5ef41f59cb8b6c99b04641e48925.s3tc.ctex"
+path.s3tc="res://.godot/imported/Worm (1)_maggot_albedo.jpg-2bbf3580dcde5833f88d756e5b4716a4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/Worm (1)_maggot_albedo.jpg"
-dest_files=["res://.godot/imported/Worm (1)_maggot_albedo.jpg-c5fa5ef41f59cb8b6c99b04641e48925.s3tc.ctex"]
+source_file="res://models/Worm (1)_maggot_albedo.jpg"
+dest_files=["res://.godot/imported/Worm (1)_maggot_albedo.jpg-2bbf3580dcde5833f88d756e5b4716a4.s3tc.ctex"]
 
 [params]
 
