@@ -284,6 +284,10 @@ transform = Transform3D(0.905569, 0, 0.424199, 0, 1, 0, -0.424199, 0, 0.905569, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 0, -30)
 player = NodePath("../../Player")
 
+[node name="Enemy2" parent="Node" node_paths=PackedStringArray("player") instance=ExtResource("6_r2nw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.550762, 0, -41.9516)
+player = NodePath("../../Player")
+
 [node name="Instructions" type="Node" parent="."]
 
 [node name="MoveInstruction" parent="Instructions" instance=ExtResource("1_jl8qb")]
@@ -314,6 +318,13 @@ Don't be a pharmaceutical skeptic, take the meds! "
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -45)
 text = "Health Packs will fully restore your health. Yes, fully. We are very generous aren't we... (Note: They will be sparse, so use them wisely)
 
+"
+
+[node name="DoorInstruction" parent="Instructions" instance=ExtResource("1_jl8qb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -65)
+text = "Doors mark the exit to a sector. They require a key card to open. We weren't going to make it easy for you. 
+
+On you trot, best get looking for the key...
 "
 
 [node name="interactable" type="Node" parent="."]
