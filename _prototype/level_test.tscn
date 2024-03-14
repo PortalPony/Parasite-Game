@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://db3spfadl84ro"]
+[gd_scene load_steps=17 format=3 uid="uid://db3spfadl84ro"]
 
 [ext_resource type="PackedScene" uid="uid://f2ybmriwskkl" path="res://_prototype/player.tscn" id="1_jh8vj"]
 [ext_resource type="Script" path="res://_prototype/level_test.gd" id="1_ly224"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://_prototype/DoorFrame.gd" id="4_xdpah"]
 [ext_resource type="PackedScene" uid="uid://cktceej0hsjos" path="res://Entities/Enemy.tscn" id="5_6awav"]
 [ext_resource type="PackedScene" uid="uid://c8q77qore7whf" path="res://Entities/meat.tscn" id="6_cgvba"]
+[ext_resource type="PackedScene" uid="uid://btv830l427urh" path="res://Entities/Pick Up/ammo_test.tscn" id="7_7lkx1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_j637v"]
 
@@ -41,7 +42,7 @@ script = ExtResource("1_ly224")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1he76")
 
-[node name="Player" parent="." instance=ExtResource("1_jh8vj")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("1_jh8vj")]
 
 [node name="Enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_86mcl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -20)
@@ -151,11 +152,13 @@ shape = SubResource("BoxShape3D_l4x3r")
 
 [node name="Enemy" parent="NavigationRegion3D" instance=ExtResource("5_6awav")]
 transform = Transform3D(1, 0, 0, 0, 0.99969, -0.0249033, 0, 0.0249033, 0.99969, 0, 1, -14.357)
-up_direction = Vector3(0.816538, 0.577292, 0)
 player_path = NodePath("../../Player")
 
 [node name="Meat" parent="." instance=ExtResource("6_cgvba")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487833, 0, -4.97239)
+
+[node name="Ammo Test" parent="." instance=ExtResource("7_7lkx1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.67991, 0, -4.11929)
 
 [connection signal="body_entered" from="NavigationRegion3D/Level/DoorFrame/Area3D" to="NavigationRegion3D/Level/DoorFrame" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="NavigationRegion3D/Level/DoorFrame/Area3D" to="NavigationRegion3D/Level/DoorFrame" method="_on_area_3d_body_exited"]

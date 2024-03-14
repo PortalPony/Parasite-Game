@@ -1,5 +1,13 @@
+res://Interactions/Interactions area/Interactions area3D.tscn
 res://_prototype/level_test.tscn
 res://_prototype/enemy.tscn
 res://_prototype/player.tscn
 res://Entities/Enemy.tscn
 res://Entities/meat.tscn
+res://Interactions/InteractionManager.tscn
+res://Interactions/InteractionManager.gd
+res://Entities/meat.gd
+res://Interactions/Interactions area/Interactions Area.gd
+res://Entities/Pick Up/ammo_test.tscn
+res://Pick Up.gd
+res://Entities/Autobus/Autobus Loader.gd

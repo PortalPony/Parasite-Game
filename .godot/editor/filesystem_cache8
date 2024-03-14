@@ -1,47 +1,65 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710404285
-icon.svg::CompressedTexture2D::8574943790063028770::1710186577::1710186577::1::::<><>::
-Main.tscn::PackedScene::958016338942981225::1710352745::0::1::::<><>::uid://ci4auy4bbb130::::res://Entities/Floor.tscn<>uid://xbg10kd43di2::::res://player.tscn<>uid://c8q77qore7whf::::res://Entities/meat.tscn<>uid://cktceej0hsjos::::res://Entities/Enemy.tscn<>res://test_rod.tscn
-player.tscn::PackedScene::1616819842734892743::1710352745::0::1::::<><>::res://Entities/Player.gd
-::res://Entities/::1710387207
-Enemy.gd::GDScript::-1::1710353882::0::1::::<>CharacterBody3D<>::
-Enemy.tscn::PackedScene::5514081783397412850::1710387207::0::1::::<><>::res://Entities/Enemy.gd
-Floor.tscn::PackedScene::5394256092642866225::1710186577::0::1::::<><>::
-Main.tscn::PackedScene::958016338942981225::1710352745::0::1::::<><>::uid://ci4auy4bbb130::::res://Entities/Floor.tscn<>uid://xbg10kd43di2::::res://Entities/player.tscn<>uid://c8q77qore7whf::::res://Entities/meat.tscn<>uid://cktceej0hsjos::::res://Entities/Enemy.tscn
-meat.gd::GDScript::-1::1710186577::0::1::::<>MeshInstance3D<>::
-meat.tscn::PackedScene::7124104203459605803::1710352745::0::1::::<><>::res://Entities/meat.gd<>uid://pbhh1w844yta::::res://Interactions/Interactions area/Interactions area3D.tscn
-Player.gd::GDScript::-1::1710352745::0::1::::<>RigidBody3D<>::
-player.tscn::PackedScene::1616819842734892743::1710352745::0::1::::<><>::res://Entities/Player.gd<>uid://odkd0qefduln::::res://Models/Crab.glb
-::res://Entities/Autobus/::1710360047
-Autobus Loader.gd::GDScript::-1::1710360047::0::1::::<>Node<>::
+::res://::1710428645
+icon.svg::CompressedTexture2D::8574943790063028770::1710425327::1710425327::1::::<><>::
+Main.tscn::PackedScene::958016338942981225::1710425327::0::1::::<><>::uid://ci4auy4bbb130::::res://Entities/Floor.tscn<>uid://xbg10kd43di2::::res://player.tscn<>uid://c8q77qore7whf::::res://Entities/meat.tscn<>uid://cktceej0hsjos::::res://Entities/Enemy.tscn<>res://test_rod.tscn
+player.tscn::PackedScene::1616819842734892743::1710425327::0::1::::<><>::res://Entities/Player.gd
+::res://assets/::1710425277
+::res://assets/3d_models/::1710425277
+::res://assets/icon/::1710425277
+::res://assets/ui/::1710425277
+::res://autoload/::1710425277
+::res://Entities/::1710425327
+Enemy.gd::GDScript::-1::1710425327::0::1::::<>CharacterBody3D<>::
+Enemy.tscn::PackedScene::5514081783397412850::1710425327::0::1::::<><>::res://Entities/Enemy.gd
+Floor.tscn::PackedScene::5394256092642866225::1710425327::0::1::::<><>::
+Main.tscn::PackedScene::958016338942981225::1710425327::0::1::::<><>::uid://ci4auy4bbb130::::res://Entities/Floor.tscn<>uid://xbg10kd43di2::::res://Entities/player.tscn<>uid://c8q77qore7whf::::res://Entities/meat.tscn<>uid://cktceej0hsjos::::res://Entities/Enemy.tscn
+meat.gd::GDScript::-1::1710425327::0::1::::<>MeshInstance3D<>::
+meat.tscn::PackedScene::7124104203459605803::1710425327::0::1::::<><>::res://Entities/meat.gd<>uid://pbhh1w844yta::::res://Interactions/Interactions area/Interactions area3D.tscn
+Player.gd::GDScript::-1::1710425327::0::1::::<>RigidBody3D<>::
+player.tscn::PackedScene::1616819842734892743::1710425327::0::1::::<><>::res://Entities/Player.gd<>uid://odkd0qefduln::::res://Models/Crab.glb
+::res://Entities/Autobus/::1710425327
+Autobus Loader.gd::GDScript::-1::1710425327::0::1::::<>Node<>::
 ::res://Interactions/::1710352745
 InteractionManager.gd::GDScript::-1::1710186577::0::1::::<>Node3D<>::
 InteractionManager.tscn::PackedScene::4867487080033238656::1710352745::0::1::::<><>::res://Interactions/InteractionManager.gd
 ::res://Interactions/Interactions area/::1710352745
 Interactions area3D.tscn::PackedScene::1055335952963336894::1710352745::0::1::::<><>::res://Interactions/Interactions area/Interactions Area.gd
 Interactions Area.gd::GDScript::-1::1710186577::0::1::::InteractionArea<>Area3D<>::
-::res://Models/::1710352745
-Barrel.glb::PackedScene::7087505466097439577::1710352745::1710352745::1::::<><>::
-Barrel_barrel_albedo.jpg::CompressedTexture2D::3651586389140641210::1710352745::1710352745::1::::<><>::
-ComputerConsole.glb::PackedScene::6921037233031496989::1710352745::1710352745::1::::<><>::
-ComputerConsole_computer_console_albedo.jpg::CompressedTexture2D::1604346589452946666::1710352745::1710352745::1::::<><>::
-Crab.glb::PackedScene::989450809493201083::1710186577::1710352745::1::::<><>::
-Crab_crab_albedo.jpg::CompressedTexture2D::8322164297724126793::1710186577::1710352745::1::::<><>::
-Human.glb::PackedScene::4209805268199527801::1710352745::1710352745::1::::<><>::
-Human_scientist_albedo.jpg::CompressedTexture2D::155620379301062034::1710352745::1710352745::1::::<><>::
-Worm (1).glb::PackedScene::6077955174880813289::1710352745::1710352745::1::::<><>::
-Worm (1)_maggot_albedo.jpg::CompressedTexture2D::4988440881205940606::1710352745::1710352745::1::::<><>::
-Worm.glb::PackedScene::3426084281520540236::1710352745::1710352745::1::::<><>::
-Worm_maggot_albedo.jpg::CompressedTexture2D::5316821842635939797::1710352745::1710352745::1::::<><>::
-::res://_prototype/::1710387207
-DoorFrame.gd::GDScript::-1::1710352745::0::1::::<>Node3D<>::
-enemy.gd::GDScript::-1::1710384367::0::1::::<>CharacterBody3D<>::
-enemy.tscn::PackedScene::3063048961593448063::1710387207::0::1::::<><>::res://_prototype/enemy.gd<>uid://csuhbe8yrln5r::::res://Models/Worm (1).glb
-health_component.gd::GDScript::-1::1710352745::0::1::::HealthComponent<>Node<>::
-Human.gd::GDScript::-1::1710352745::0::1::::<>Node3D<>::
-human.tscn::PackedScene::6752138076841282155::1710352745::0::1::::<><>::uid://b08i43vnpwdk0::::res://Models/Human.glb<>res://_prototype/Human.gd
+::res://levels/::1710424982
+level_0_tutorial.tscn::PackedScene::1688333186812678::1710424982::0::1::::<><>::uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://f2ybmriwskkl::::res://Entities/player/player.tscn<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://bjv077a40lict::::res://Entities/enemy/wormenemy.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb
+level_0_tutorial_grid.tscn::PackedScene::2771826022784187152::1710424150::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://r2g2hb8ycdbg::::res://entities/enemy/crab_enemy.tscn<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb<>uid://dquafonir56ny::::res://models/laboratory.tres
+node_3d.tscn::PackedScene::6599526529795107035::1710424150::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn
+test.tscn::PackedScene::6689476705725361535::1710424150::0::1::::<><>::uid://dquafonir56ny::::res://models/laboratory.tres
+::res://levels/tutorial/::1710424150
+tutorial_trigger.gd::GDScript::-1::1710424150::0::1::::TutorialTrigger<>Area3D<>::
+tutorial_trigger.tscn::PackedScene::5570175527756487918::1710424151::0::1::::<><>::res://levels/tutorial/tutorial_trigger.gd
+::res://Models/::1710425209
+Barrel.glb::PackedScene::7087505466097439577::1710352745::1710425209::1::::<><>::
+Barrel_barrel_albedo.jpg::CompressedTexture2D::3651586389140641210::1710352745::1710425207::1::::<><>::
+ComputerConsole.glb::PackedScene::6921037233031496989::1710352745::1710425209::1::::<><>::
+ComputerConsole_computer_console_albedo.jpg::CompressedTexture2D::1604346589452946666::1710352745::1710425208::1::::<><>::
+Crab.glb::PackedScene::989450809493201083::1710186577::1710425209::1::::<><>::
+Crab_crab_albedo.jpg::CompressedTexture2D::8322164297724126793::1710186577::1710425208::1::::<><>::
+Human.gd::GDScript::-1::1710425192::0::1::::HumanModel<>Node3D<>::
+Human.glb::PackedScene::4209805268199527801::1710352745::1710425208::1::::<><>::
+human_model.tscn::PackedScene::2747706719268040503::1710424151::0::1::::<><>::uid://bindqdlqx0l7i::::res://assets/3d_models/Human (1).glb<>res://models/Human.gd<>uid://bdmk6awac77g6::::res://assets/3d_models/Pistol.glb
+Human_scientist_albedo.jpg::CompressedTexture2D::155620379301062034::1710352745::1710425208::1::::<><>::
+laboratory.tres::MeshLibrary::8323580789135317262::1710424151::0::1::::<><>::
+labratory_tileset.tscn::PackedScene::6338025155340490489::1710424151::0::1::::<><>::uid://cfkmrs26jjdhr::::res://assets/3d_models/LabratoryTileset.glb<>uid://yx4762nxa7df::::res://assets/3d_models/concrete.tres<>uid://cqsmry5f7563p::::res://assets/3d_models/tiles_2.tres
+Worm (1).glb::PackedScene::6077955174880813289::1710352745::1710425208::1::::<><>::
+Worm (1)_maggot_albedo.jpg::CompressedTexture2D::4988440881205940606::1710352745::1710425208::1::::<><>::
+Worm.glb::PackedScene::3426084281520540236::1710352745::1710425208::1::::<><>::
+Worm_maggot_albedo.jpg::CompressedTexture2D::5316821842635939797::1710352745::1710425207::1::::<><>::
+::res://_old/::1710425273
+::res://_prototype/::1710425327
+DoorFrame.gd::GDScript::-1::1710425192::0::1::::<>Node3D<>::
+enemy.gd::GDScript::-1::1710425327::0::1::::<>CharacterBody3D<>::
+enemy.tscn::PackedScene::3063048961593448063::1710425327::0::1::::<><>::res://_prototype/enemy.gd<>uid://csuhbe8yrln5r::::res://Models/Worm (1).glb
+health_component.gd::GDScript::-1::1710425327::0::1::::HealthComponent<>Node<>::
+Human.gd::GDScript::-1::1710425327::0::1::::<>Node3D<>::
+human.tscn::PackedScene::6752138076841282155::1710425327::0::1::::<><>::uid://b08i43vnpwdk0::::res://Models/Human.glb<>res://_prototype/Human.gd
 level_test.gd::GDScript::-1::1710360047::0::1::::<>Node3D<>::
-level_test.tscn::PackedScene::7288373427378466908::1710387207::0::1::::<><>::uid://f2ybmriwskkl::::res://_prototype/player.tscn<>res://_prototype/level_test.gd<>uid://bjv077a40lict::::res://_prototype/enemy.tscn<>res://_prototype/DoorFrame.gd<>uid://cktceej0hsjos::::res://Entities/Enemy.tscn
-player.gd::GDScript::-1::1710352745::0::1::::Player<>CharacterBody3D<>::
-player.tscn::PackedScene::408142068105554871::1710387207::0::1::::<><>::res://_prototype/player.gd<>uid://c3g1y0euvk30j::::res://_prototype/human.tscn
-player_health_component.gd::GDScript::-1::1710352745::0::1::::PlayerHealthComponent<>HealthComponent<>::
+level_test.tscn::PackedScene::7288373427378466908::1710425327::0::1::::<><>::uid://f2ybmriwskkl::::res://_prototype/player.tscn<>res://_prototype/level_test.gd<>uid://bjv077a40lict::::res://_prototype/enemy.tscn<>res://_prototype/DoorFrame.gd<>uid://cktceej0hsjos::::res://Entities/Enemy.tscn<>uid://c8q77qore7whf::::res://Entities/meat.tscn
+player.gd::GDScript::-1::1710425327::0::1::::Player<>CharacterBody3D<>::
+player.tscn::PackedScene::408142068105554871::1710425327::0::1::::<><>::res://_prototype/player.gd<>uid://c3g1y0euvk30j::::res://_prototype/human.tscn
+player_health_component.gd::GDScript::-1::1710425327::0::1::::PlayerHealthComponent<>HealthComponent<>::

@@ -28,6 +28,8 @@ gradient = SubResource("Gradient_t4fcd")
 size = Vector3(0.5, 2, 0.5)
 
 [node name="Player" type="CharacterBody3D"]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_lmvu0")
 
 [node name="Human" parent="." instance=ExtResource("2_b4lk5")]

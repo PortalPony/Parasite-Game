@@ -5,7 +5,7 @@ extends Node3D
 @onready var label = $Label
 
 
-const base_text = "[E] "
+const base_text = "[E]"
 
 
 var active_areas = []

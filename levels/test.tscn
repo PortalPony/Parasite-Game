@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2kox627tgjjj"]
+
+[ext_resource type="MeshLibrary" uid="uid://dquafonir56ny" path="res://models/laboratory.tres" id="1_5bbsf"]
+
+[node name="Test" type="GridMap"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.90735e-06, 0)
+mesh_library = ExtResource("1_5bbsf")
+cell_size = Vector3(6, 4, 6)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(-1, 2, 4, -65536, 2, 4, -65536, 3, 4, -65535, 3, 4, -65534, 3, 4, -65534, 2, 4, -65534, 1, 4, -65534, 0, 4, -65536, 65535, 4, -65535, 2, 4, -1, 65535, 4, -2, 65535, 4, -65535, 65535, 4, -65536, 65534, 4, -1, 65534, 4, -65534, 65535, 4, -65534, 65534, 4, -65535, 65534, 4, -65536, 65533, 4, -2, 65534, 4, -3, 65535, 4, -3, 0, 4, -3, 1, 4, -3, 2, 4, -3, 3, 4, -2, 3, 4, -1, 3, 4, -2, 2, 4)
+}
+metadata/_editor_floor_ = Vector3(0, -1, 0)
