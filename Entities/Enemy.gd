@@ -14,6 +14,7 @@ const ATTACK_RANGE = 2.0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_node(player_path)
+	
 
 
 

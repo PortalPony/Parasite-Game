@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="Parasite-game"
+run/main_scene="res://_prototype/level_test.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 InteractionManager="*res://Interactions/InteractionManager.tscn"
+AutobusLoader="*res://Entities/Autobus/Autobus Loader.gd"
 
 [input]
 

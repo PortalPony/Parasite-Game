@@ -9,6 +9,13 @@ var attacking: bool = false
 
 @export var player: CharacterBody3D
 
+func _ready():
+	
+	AutobusLoader.connect("HELLO_WORLD", say_hello)
+	
+func say_hello():
+	print("Line 12-17 Autobus Test Code")
+
 func _physics_process(delta: float) -> void:
 	if global_position.distance_to(player.global_position) < ATTACK_RANGE:
 		attack()

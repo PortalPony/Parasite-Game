@@ -1,7 +1,5 @@
 res://_prototype/level_test.tscn
 res://_prototype/enemy.tscn
 res://_prototype/player.tscn
-res://_prototype/enemy.gd
-res://_prototype/level_test.gd
-res://_prototype/health_component.gd
-res://_prototype/player_health_component.gd
+res://Entities/Enemy.tscn
+res://Entities/meat.tscn

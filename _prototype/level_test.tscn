@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://db3spfadl84ro"]
+[gd_scene load_steps=16 format=3 uid="uid://db3spfadl84ro"]
 
 [ext_resource type="PackedScene" uid="uid://f2ybmriwskkl" path="res://_prototype/player.tscn" id="1_jh8vj"]
 [ext_resource type="Script" path="res://_prototype/level_test.gd" id="1_ly224"]
 [ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://_prototype/enemy.tscn" id="2_86mcl"]
 [ext_resource type="Script" path="res://_prototype/DoorFrame.gd" id="4_xdpah"]
+[ext_resource type="PackedScene" uid="uid://cktceej0hsjos" path="res://Entities/Enemy.tscn" id="5_6awav"]
+[ext_resource type="PackedScene" uid="uid://c8q77qore7whf" path="res://Entities/meat.tscn" id="6_cgvba"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_j637v"]
 
@@ -13,6 +15,13 @@ sky_material = SubResource("ProceduralSkyMaterial_j637v")
 [sub_resource type="Environment" id="Environment_1he76"]
 background_mode = 2
 sky = SubResource("Sky_qy6ea")
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_k3x5b"]
+vertices = PackedVector3Array(-4.5, 0.5, -44.5, -4.5, 0.5, -41, 4.5, 0.5, -41, 4.5, 0.5, -44.5, -4.5, 0.5, -38.75, -4.5, 0.5, 4.5, 4.5, 0.5, 4.5, 4.5, 0.5, -38.75)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Array(7, 6, 4), PackedInt32Array(4, 6, 5)]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bt8ip"]
+size = Vector3(10, 1, 10)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6bcqh"]
 size = Vector3(2, 10, 1)
@@ -26,9 +35,6 @@ size = Vector3(6, 6, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_l4x3r"]
 size = Vector3(10, 10, 3)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_bt8ip"]
-size = Vector3(10, 1, 10)
-
 [node name="LevelTest" type="Node3D"]
 script = ExtResource("1_ly224")
 
@@ -41,97 +47,6 @@ environment = SubResource("Environment_1he76")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -20)
 player = NodePath("../Player")
 
-[node name="DoorFrame" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40)
-script = ExtResource("4_xdpah")
-
-[node name="Frame1" type="StaticBody3D" parent="DoorFrame"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="DoorFrame/Frame1"]
-size = Vector3(2, 10, 1)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorFrame/Frame1"]
-shape = SubResource("BoxShape3D_6bcqh")
-
-[node name="Frame2" type="StaticBody3D" parent="DoorFrame"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="DoorFrame/Frame2"]
-size = Vector3(2, 10, 1)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorFrame/Frame2"]
-shape = SubResource("BoxShape3D_6bcqh")
-
-[node name="Frame3" type="StaticBody3D" parent="DoorFrame"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="DoorFrame/Frame3"]
-size = Vector3(6, 2, 1)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorFrame/Frame3"]
-shape = SubResource("BoxShape3D_rprt8")
-
-[node name="Door" type="StaticBody3D" parent="DoorFrame"]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="DoorFrame/Door"]
-size = Vector3(6, 6, 1)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorFrame/Door"]
-shape = SubResource("BoxShape3D_kf443")
-
-[node name="Area3D" type="Area3D" parent="DoorFrame"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorFrame/Area3D"]
-shape = SubResource("BoxShape3D_l4x3r")
-
-[node name="Level" type="Node" parent="."]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level/StaticBody3D"]
-size = Vector3(10, 1, 10)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D"]
-shape = SubResource("BoxShape3D_bt8ip")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -10)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level/StaticBody3D2"]
-size = Vector3(10, 1, 10)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D2"]
-shape = SubResource("BoxShape3D_bt8ip")
-
-[node name="StaticBody3D3" type="StaticBody3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -20)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level/StaticBody3D3"]
-size = Vector3(10, 1, 10)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D3"]
-shape = SubResource("BoxShape3D_bt8ip")
-
-[node name="StaticBody3D4" type="StaticBody3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -30)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level/StaticBody3D4"]
-size = Vector3(10, 1, 10)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D4"]
-shape = SubResource("BoxShape3D_bt8ip")
-
-[node name="StaticBody3D5" type="StaticBody3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -40)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level/StaticBody3D5"]
-size = Vector3(10, 1, 10)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D5"]
-shape = SubResource("BoxShape3D_bt8ip")
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
@@ -140,5 +55,107 @@ offset_bottom = 23.0
 text = "TIME Until De-parasitation: 1 minute 18 seconds"
 metadata/_edit_use_anchors_ = true
 
-[connection signal="body_entered" from="DoorFrame/Area3D" to="DoorFrame" method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="DoorFrame/Area3D" to="DoorFrame" method="_on_area_3d_body_exited"]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_k3x5b")
+
+[node name="Level" type="Node" parent="NavigationRegion3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/StaticBody3D"]
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/StaticBody3D"]
+shape = SubResource("BoxShape3D_bt8ip")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="NavigationRegion3D/Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -10)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/StaticBody3D2"]
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/StaticBody3D2"]
+shape = SubResource("BoxShape3D_bt8ip")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="NavigationRegion3D/Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -20)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/StaticBody3D3"]
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/StaticBody3D3"]
+shape = SubResource("BoxShape3D_bt8ip")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="NavigationRegion3D/Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -30)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/StaticBody3D4"]
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/StaticBody3D4"]
+shape = SubResource("BoxShape3D_bt8ip")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="NavigationRegion3D/Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -40)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/StaticBody3D5"]
+size = Vector3(10, 1, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/StaticBody3D5"]
+shape = SubResource("BoxShape3D_bt8ip")
+
+[node name="DoorFrame" type="Node3D" parent="NavigationRegion3D/Level"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40)
+script = ExtResource("4_xdpah")
+
+[node name="Frame1" type="StaticBody3D" parent="NavigationRegion3D/Level/DoorFrame"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/DoorFrame/Frame1"]
+size = Vector3(2, 10, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/DoorFrame/Frame1"]
+shape = SubResource("BoxShape3D_6bcqh")
+
+[node name="Frame2" type="StaticBody3D" parent="NavigationRegion3D/Level/DoorFrame"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/DoorFrame/Frame2"]
+size = Vector3(2, 10, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/DoorFrame/Frame2"]
+shape = SubResource("BoxShape3D_6bcqh")
+
+[node name="Frame3" type="StaticBody3D" parent="NavigationRegion3D/Level/DoorFrame"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/DoorFrame/Frame3"]
+size = Vector3(6, 2, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/DoorFrame/Frame3"]
+shape = SubResource("BoxShape3D_rprt8")
+
+[node name="Door" type="StaticBody3D" parent="NavigationRegion3D/Level/DoorFrame"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/Level/DoorFrame/Door"]
+size = Vector3(6, 6, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/DoorFrame/Door"]
+shape = SubResource("BoxShape3D_kf443")
+
+[node name="Area3D" type="Area3D" parent="NavigationRegion3D/Level/DoorFrame"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Level/DoorFrame/Area3D"]
+shape = SubResource("BoxShape3D_l4x3r")
+
+[node name="Enemy" parent="NavigationRegion3D" instance=ExtResource("5_6awav")]
+transform = Transform3D(1, 0, 0, 0, 0.99969, -0.0249033, 0, 0.0249033, 0.99969, 0, 1, -14.357)
+up_direction = Vector3(0.816538, 0.577292, 0)
+player_path = NodePath("../../Player")
+
+[node name="Meat" parent="." instance=ExtResource("6_cgvba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487833, 0, -4.97239)
+
+[connection signal="body_entered" from="NavigationRegion3D/Level/DoorFrame/Area3D" to="NavigationRegion3D/Level/DoorFrame" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="NavigationRegion3D/Level/DoorFrame/Area3D" to="NavigationRegion3D/Level/DoorFrame" method="_on_area_3d_body_exited"]
