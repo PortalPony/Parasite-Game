@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710410156
-::res://assets/::1710276462
+::res://::1710412965
+::res://assets/::1710412106
 ::res://assets/3d_models/::1710409555
 AmmoBox.glb::PackedScene::7830635242804850472::1710234701::1710234701::1::::<><>::uid://dsupx6df5hxx0::::res://assets/3d_models/AmmoBox_pistol_albedo.jpg
 AmmoBox_pistol_albedo.jpg::CompressedTexture2D::8464902252922228603::1710234701::1710234701::1::::<><>::
@@ -48,9 +48,13 @@ Trashcan_trashcan_albedo.jpg::PackedScene::1671267552216634175::1710244669::1710
 Worm.glb::PackedScene::1671267552216634175::1710262999::1710263004::0::::<><>::
 Worm_maggot_albedo.jpg::CompressedTexture2D::7831838959779871542::1710263004::1710263004::1::::<><>::
 ::res://assets/audio/::1710233735
+::res://assets/icon/::1710412846
+worm.png::CompressedTexture2D::3462780416604369280::1710413052::1710413055::1::::<><>::
 ::res://assets/ui/::1710276706
 hp_orb.png::CompressedTexture2D::6306126797979074136::1710276699::1710276706::1::::<><>::
 worm_sprite.png::CompressedTexture2D::7656511310206743361::1710276497::1710276498::1::::<><>::
+::res://autoload/::1710411316
+event_bus.gd::GDScript::-1::1710411316::0::1::::<>Node<>::
 ::res://entities/::1710368947
 health_component.gd::GDScript::-1::1710368947::0::1::::HealthComponent<>Node<>::
 ::res://entities/enemy/::1710410159
@@ -60,11 +64,11 @@ EnemyHealthBar.gd::GDScript::-1::1710279272::0::1::::EnemyHealthBar<>MarginConta
 wormenemy.tscn::PackedScene::3063048961593448063::1710410159::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://csuhbe8yrln5r::::res://models/Worm (1).glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
 ::res://entities/interactable/::1710244324
 ::res://entities/npc/::1710250966
-::res://entities/player/::1710410159
+::res://entities/player/::1710411634
 hporb.gd::GDScript::-1::1710368981::0::1::::<>TextureRect<>::
 parasite_counter.gd::GDScript::-1::1710279073::0::1::::<>MarginContainer<>::
 player.gd::GDScript::-1::1710378639::0::1::::Player<>CharacterBody3D<>::
-player.tscn::PackedScene::408142068105554871::1710410159::0::1::::<><>::res://entities/player/player.gd<>uid://bffalfoobcbgh::::res://models/human_model.tscn<>res://entities/player/parasite_counter.gd<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/player/player_health_component.gd<>res://entities/player/player_camera.gd<>uid://dhc4vf1uampt6::::res://assets/ui/worm_sprite.png<>uid://cv3y8tacprvns::::res://assets/ui/hp_orb.png<>res://entities/player/hporb.gd
+player.tscn::PackedScene::408142068105554871::1710411634::0::1::::<><>::res://entities/player/player.gd<>uid://bffalfoobcbgh::::res://models/human_model.tscn<>res://entities/player/parasite_counter.gd<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/player/player_health_component.gd<>res://entities/player/player_camera.gd<>uid://dhc4vf1uampt6::::res://assets/ui/worm_sprite.png<>uid://cv3y8tacprvns::::res://assets/ui/hp_orb.png<>res://entities/player/hporb.gd
 player_camera.gd::GDScript::-1::1710377604::0::1::::PlayerCamera<>Camera3D<>::
 player_health_component.gd::GDScript::-1::1710241732::0::1::::PlayerHealthComponent<>HealthComponent<>::
 state.gd::GDScript::-1::1710377847::0::1::::PlayerState<>Node<>::
