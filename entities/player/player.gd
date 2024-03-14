@@ -84,6 +84,8 @@ func add_bullets(value: int) -> void:
 
 
 func shoot() -> void:
+	print("shot")
+	
 	if not bullets > 0:
 		return
 	

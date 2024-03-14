@@ -4,3 +4,6 @@ res://entities/player/player.tscn
 res://entities/enemy/wormenemy.tscn
 res://entities/enemy/crab_enemy.tscn
 res://entities/player/player_camera.gd
+res://levels/environment.gd
+res://models/human_model.tscn
+res://entities/player/player.gd
