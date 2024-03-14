@@ -1,1 +1,6 @@
 res://levels/level_0_tutorial_grid.tscn
+res://levels/tutorial/tutorial_trigger.tscn
+res://entities/player/player.tscn
+res://entities/enemy/wormenemy.tscn
+res://entities/enemy/crab_enemy.tscn
+res://entities/player/player_camera.gd
