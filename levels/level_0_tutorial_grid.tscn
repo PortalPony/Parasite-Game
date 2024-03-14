@@ -1,11 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfqxtmqujiusm"]
+[gd_scene load_steps=14 format=3 uid="uid://bfqxtmqujiusm"]
 
 [ext_resource type="PackedScene" uid="uid://f2ybmriwskkl" path="res://entities/player/player.tscn" id="1_gco3w"]
 [ext_resource type="PackedScene" uid="uid://c83dm3f345vko" path="res://assets/3d_models/FilingCabinet.glb" id="2_fvamm"]
 [ext_resource type="PackedScene" uid="uid://4ijamvjrowml" path="res://assets/3d_models/OfficeChair.glb" id="3_p7wuw"]
 [ext_resource type="PackedScene" uid="uid://7orrj68ap5jv" path="res://assets/3d_models/Trashcan.glb" id="4_bts8b"]
 [ext_resource type="PackedScene" uid="uid://begnnugvcnukh" path="res://assets/3d_models/Barrel.glb" id="5_8gayj"]
-[ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/enemy.tscn" id="6_ybord"]
+[ext_resource type="PackedScene" uid="uid://r2g2hb8ycdbg" path="res://entities/enemy/crab_enemy.tscn" id="6_31lqm"]
+[ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/wormenemy.tscn" id="6_ybord"]
 [ext_resource type="PackedScene" uid="uid://clmh8htdc7l87" path="res://levels/tutorial/tutorial_trigger.tscn" id="7_3stup"]
 [ext_resource type="PackedScene" uid="uid://djthohv70kgsm" path="res://assets/3d_models/AmmoBox.glb" id="8_v2ftc"]
 [ext_resource type="MeshLibrary" uid="uid://dquafonir56ny" path="res://models/laboratory.tres" id="9_n5ajl"]
@@ -66,15 +67,19 @@ transform = Transform3D(0.905569, 0, 0.424199, 0, 1, 0, -0.424199, 0, 0.905569, 
 
 [node name="Enemy" parent="Node" node_paths=PackedStringArray("player") instance=ExtResource("6_ybord")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 0, -30)
-player = NodePath("../../GridMap/Player")
+player = NodePath("../../Player")
 
 [node name="Enemy2" parent="Node" node_paths=PackedStringArray("player") instance=ExtResource("6_ybord")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.550762, 0, -41.9516)
-player = NodePath("../../GridMap/Player")
+player = NodePath("../../Player")
 
 [node name="Enemy3" parent="Node" node_paths=PackedStringArray("player") instance=ExtResource("6_ybord")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3508, 0, -64.7483)
-player = NodePath("../../GridMap/Player")
+player = NodePath("../../Player")
+
+[node name="CrabEnemy" parent="Node" node_paths=PackedStringArray("player") instance=ExtResource("6_31lqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5746, 0, -23.0215)
+player = NodePath("../../Player")
 
 [node name="Instructions" type="Node" parent="."]
 
@@ -133,5 +138,5 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
-[node name="Player" parent="GridMap" instance=ExtResource("1_gco3w")]
+[node name="Player" parent="." instance=ExtResource("1_gco3w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.44952)

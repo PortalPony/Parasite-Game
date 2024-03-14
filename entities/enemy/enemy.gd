@@ -2,16 +2,16 @@ class_name Enemy
 
 extends CharacterBody3D
 
-const ATTACK_RANGE: int = 1
-
-const SPEED: int = 3
 
 var attacking: bool = false
 
 @onready var health_component: HealthComponent = $HealthComponent
-@onready var model: Node3D = $Worm	
+@onready var model: Node3D = $Model
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
+
+@export var attack_range: int = 1
 @export var player: CharacterBody3D
+@export var speed: int = 0
 
 
 func _ready() -> void:
@@ -19,7 +19,7 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	if global_position.distance_to(player.global_position) < ATTACK_RANGE:
+	if global_position.distance_to(player.global_position) < attack_range:
 		attack()
 		return
 	
@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 	nav_agent.set_target_position(player.global_transform.origin)
 	var next_nav_point = nav_agent.get_next_path_position() 
 	
-	velocity = global_position.direction_to(next_nav_point) * SPEED
+	velocity = global_position.direction_to(next_nav_point) * speed
 	
 	model.look_at(next_nav_point)
 	model.rotate_y(PI) #the sprite is facing backwards

@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4ijamvjrowml" path="res://assets/3d_models/OfficeChair.glb" id="3_rovp8"]
 [ext_resource type="PackedScene" uid="uid://7orrj68ap5jv" path="res://assets/3d_models/Trashcan.glb" id="4_oam5m"]
 [ext_resource type="PackedScene" uid="uid://begnnugvcnukh" path="res://assets/3d_models/Barrel.glb" id="5_ru8xq"]
-[ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/enemy.tscn" id="6_r2nw3"]
+[ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/wormenemy.tscn" id="6_r2nw3"]
 [ext_resource type="PackedScene" uid="uid://djthohv70kgsm" path="res://assets/3d_models/AmmoBox.glb" id="7_vcpuu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4gxg7"]

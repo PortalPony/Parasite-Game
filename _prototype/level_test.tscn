@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://f2ybmriwskkl" path="res://entities/player/player.tscn" id="1_jh8vj"]
 [ext_resource type="Script" path="res://_prototype/level_test.gd" id="1_ly224"]
-[ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/enemy.tscn" id="2_86mcl"]
+[ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/wormenemy.tscn" id="2_86mcl"]
 [ext_resource type="Script" path="res://_prototype/DoorFrame.gd" id="4_xdpah"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_j637v"]

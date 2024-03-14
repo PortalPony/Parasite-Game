@@ -1,8 +1,12 @@
+res://entities/enemy/enemy.tscn
 res://models/laboratory.tres
+res://entities/enemy/enemy.gd
 res://levels/level_0_tutorial_grid.tscn
 res://levels/tutorial/tutorial_trigger.tscn
 res://entities/player/player.tscn
-res://entities/enemy/enemy.tscn
 res://levels/node_3d.tscn
 res://_old/Main.tscn
 res://models/labratory_tileset.tscn
+res://assets/3d_models/concrete.tres
+res://entities/enemy/wormenemy.tscn
+res://entities/enemy/crab_enemy.tscn
