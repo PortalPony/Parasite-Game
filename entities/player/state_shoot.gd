@@ -11,10 +11,10 @@ var shoot_cooldown: bool = true
 
 func handle_input(event: InputEvent) -> PlayerState:
 	if event.is_action_pressed("move") and not model.is_animation_playing():
-		return PlayerStateMove.new(model)
+		return PlayerStateMove.new(player, model)
 	
 	if event.is_action_pressed("shoot"):
-		return PlayerStateShoot.new(model)
+		return PlayerStateShoot.new(player, model)
 	
 	return null
 
@@ -28,11 +28,13 @@ func orientate_model(cursor_position) -> void:
 func enter() -> void:
 	model.play_animation(HumanModel.ANIMATION.SHOOT)
 	
+	player.shoot()
+	
 	await model.animation_player.animation_finished
 	
 	if aiming:
-		change_state_to.emit(PlayerStateAim.new(model, aiming))
+		change_state_to.emit(PlayerStateAim.new(player, model, aiming))
 		return
 	
-	change_state_to.emit(PlayerStateIdle.new(model))
+	change_state_to.emit(PlayerStateIdle.new(player, model))
 

@@ -186,15 +186,6 @@ size = Vector3(1, 4, 10)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D3"]
 shape = SubResource("BoxShape3D_lxe5a")
 
-[node name="StaticBody3D19" type="StaticBody3D" parent="wall"]
-transform = Transform3D(1.00257, 0, 0, 0, 1.00257, 0, 0, 0, 1.00257, 30, 2, -65)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="wall/StaticBody3D19"]
-size = Vector3(1, 4, 10)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D19"]
-shape = SubResource("BoxShape3D_lxe5a")
-
 [node name="StaticBody3D6" type="StaticBody3D" parent="wall"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -25)
 
@@ -301,33 +292,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 2, -70)
 size = Vector3(10, 4, 1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D15"]
-shape = SubResource("BoxShape3D_i5bsh")
-
-[node name="StaticBody3D16" type="StaticBody3D" parent="wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, -0.5, -65)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D16"]
-shape = SubResource("BoxShape3D_he7uv")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="wall/StaticBody3D16"]
-size = Vector3(10, 1, 10)
-
-[node name="StaticBody3D17" type="StaticBody3D" parent="wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 2, -60)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="wall/StaticBody3D17"]
-size = Vector3(10, 4, 1)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D17"]
-shape = SubResource("BoxShape3D_i5bsh")
-
-[node name="StaticBody3D18" type="StaticBody3D" parent="wall"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 2, -70)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="wall/StaticBody3D18"]
-size = Vector3(10, 4, 1)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D18"]
 shape = SubResource("BoxShape3D_i5bsh")
 
 [node name="Objects" type="Node" parent="."]

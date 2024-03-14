@@ -1,6 +1,6 @@
 extends MarginContainer
 
-var worm_sprite: CompressedTexture2D = preload("res://assets/worm_sprite.png")
+var worm_sprite: CompressedTexture2D = preload("res://assets/ui/worm_sprite.png")
 
 @export var player_health_component: PlayerHealthComponent
 

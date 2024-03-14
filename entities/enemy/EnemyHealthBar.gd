@@ -1,6 +1,6 @@
 class_name EnemyHealthBar
 
-extends Node
+extends MarginContainer
 
 @onready var under: TextureProgressBar = $Under
 @onready var over: TextureProgressBar = $Over

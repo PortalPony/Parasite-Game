@@ -8,14 +8,20 @@ const DISTANCE_THRESHOLD: float = 0.05
 var target: Vector3
 
 
-func calculate_velocity(body: CharacterBody3D, from: Vector3, to: Vector3) -> PlayerState:
+func handle_input(event: InputEvent) -> PlayerState:
+	if event.is_action_released("move"):
+		return PlayerStateIdle.new(player, model)
+	
+	return null
+
+
+func calculate_velocity(from: Vector3, to: Vector3) -> PlayerState:
 	target = to
 	
 	if from.distance_to(target) < DISTANCE_THRESHOLD:
-		body.velocity = Vector3.ZERO
-		return PlayerStateIdle.new(model)
+		return PlayerStateIdle.new(player, model)
 	
-	body.velocity = from.direction_to(target) * SPEED
+	player.velocity = from.direction_to(target) * SPEED
 	
 	return null
 
@@ -28,3 +34,6 @@ func enter() -> void:
 	print("move...")
 	model.play_animation(HumanModel.ANIMATION.RUN)
 
+
+func exit() -> void:
+	player.velocity = Vector3.ZERO

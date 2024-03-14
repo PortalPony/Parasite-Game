@@ -1,8 +1,8 @@
-res://levels/level_0_tutorial.tscn
-res://levels/tutorial/tutorial_trigger.gd
+res://models/laboratory.tres
+res://levels/level_0_tutorial_grid.tscn
 res://levels/tutorial/tutorial_trigger.tscn
 res://entities/player/player.tscn
-res://entities/player/player_camera.gd
 res://entities/enemy/enemy.tscn
-res://entities/enemy/enemy.gd
-res://entities/player/player.gd
+res://levels/node_3d.tscn
+res://_old/Main.tscn
+res://models/labratory_tileset.tscn

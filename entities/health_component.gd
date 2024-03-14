@@ -25,7 +25,8 @@ func _ready() -> void:
 ## Modify the hit points by the passed in value. Healing is achieved by passing in a negative value. No default value so the ammount of damage given does not need inferring.
 func take_damage(value: int) -> void:
 	print("damage: ", value)
-	hp = clamp(hp - value, 0, max_hp)
+	hp -= value
+	hp = clamp(hp, 0, max_hp)
 	
 	hp_updated.emit(hp)
 	

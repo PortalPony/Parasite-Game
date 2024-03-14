@@ -5,10 +5,10 @@ extends PlayerState
 
 func handle_input(event: InputEvent) -> PlayerState:
 	if event.is_action_pressed("move"):
-		return PlayerStateMove.new(model)
+		return PlayerStateMove.new(player, model)
 	
 	if event.is_action_pressed("shoot"):
-		return PlayerStateShoot.new(model)
+		return PlayerStateShoot.new(player, model)
 	
 	return null
 
@@ -19,7 +19,7 @@ func _move_to(pos: Vector3) -> Vector3:
 
 func handle_aim(at_enemy: bool) -> PlayerState:
 	if at_enemy:
-		return PlayerStateAim.new(model, false)
+		return PlayerStateAim.new(player, model, false)
 	
 	return super.handle_aim(at_enemy)
 
