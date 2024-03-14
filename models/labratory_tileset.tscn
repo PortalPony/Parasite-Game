@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwkgl3wbb4lbt"]
+
+[ext_resource type="PackedScene" uid="uid://cfkmrs26jjdhr" path="res://assets/3d_models/LabratoryTileset.glb" id="1_mhf47"]
+[ext_resource type="Material" uid="uid://yx4762nxa7df" path="res://assets/3d_models/concrete.tres" id="2_80i2x"]
+[ext_resource type="Material" uid="uid://cqsmry5f7563p" path="res://assets/3d_models/tiles_2.tres" id="3_i1x1w"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_yys43"]
+vertices = PackedVector3Array(-3, 0.02, -3, -3, 0.02, 3, 3, 0.02, 3, 3, 0.02, -3)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+cell_height = 0.01
+agent_radius = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0lib7"]
+size = Vector2(6, 6)
+
+[node name="LabratoryTileset" instance=ExtResource("1_mhf47")]
+
+[node name="Wall" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_80i2x")
+
+[node name="Floor" parent="." index="4"]
+material_override = ExtResource("3_i1x1w")
+surface_material_override/0 = ExtResource("3_i1x1w")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Floor" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+navigation_mesh = SubResource("NavigationMesh_yys43")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/NavigationRegion3D" index="0"]
+mesh = SubResource("PlaneMesh_0lib7")
+
+[node name="Pillar3" parent="." index="7"]
+material_override = ExtResource("2_80i2x")

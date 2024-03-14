@@ -12,11 +12,16 @@ config_version=5
 
 config/name="Parasite-game"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
 
 [autoload]
 
 InteractionManager="*res://Interactions/InteractionManager.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/resizable=false
 
 [input]
 
