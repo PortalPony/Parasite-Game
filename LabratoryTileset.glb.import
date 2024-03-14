@@ -31,9 +31,17 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
+"Floor": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/concrete.tres"
+},
+"Rail": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/materials/a.tres"
+},
 "Wall": {
 "use_external/enabled": true,
-"use_external/path": ""
+"use_external/path": "res://assets/materials/tiles_2.tres"
 }
 }
 }

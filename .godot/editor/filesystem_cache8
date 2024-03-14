@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710413254
-LabratoryTileset.glb::PackedScene::732639495614789493::1710413141::1710413176::1::::<><>::
-::res://assets/::1710413191
+::res://::1710422893
+LabratoryTileset.glb::PackedScene::732639495614789493::1710422879::1710423256::1::::<><>::res://assets/materials/tiles_2.tres<>res://assets/materials/concrete.tres<>res://assets/materials/a.tres
+::res://assets/::1710423188
 ::res://assets/3d_models/::1710412916
 AmmoBox.glb::PackedScene::7830635242804850472::1710411880::1710411912::1::::<><>::
 AmmoBox_pistol_albedo.jpg::CompressedTexture2D::8464902252922228603::1710411880::1710411911::1::::<><>::
@@ -48,24 +48,34 @@ Trashcan.glb::PackedScene::2276007354446368023::1710411880::1710411911::1::::<><
 Trashcan_trashcan_albedo.jpg::CompressedTexture2D::4663900398985712221::1710411880::1710411911::1::::<><>::
 Worm.glb::PackedScene::1671267552216634175::1710411880::1710411911::1::::<><>::
 Worm_maggot_albedo.jpg::CompressedTexture2D::7831838959779871542::1710411880::1710411911::1::::<><>::
-::res://assets/mesh_libraries/::1710413197
-labratory.meshlib::MeshLibrary::2316535103658793231::1710413197::0::1::::<><>::
+::res://assets/materials/::1710423206
+a.tres::ORMMaterial3D::-1::1710423206::0::1::::<><>::
+concrete.tres::ORMMaterial3D::-1::1710423206::0::1::::<><>::
+concrete_albedo.png::CompressedTexture2D::4777813996799008668::1710423206::1710423206::1::::<><>::
+concrete_normal.png::CompressedTexture2D::737353487117568701::1710423206::1710423206::1::::<><>::
+tiles_2.tres::StandardMaterial3D::-1::1710423206::0::1::::<><>::
+tiles_2_albedo.png::CompressedTexture2D::7503758271526380079::1710423206::1710423206::1::::<><>::
+tiles_2_heightmap.png::CompressedTexture2D::6509388337371890982::1710423206::1710423206::1::::<><>::
+tiles_2_normal.png::CompressedTexture2D::6849554854224019425::1710423206::1710423206::1::::<><>::
+tiles_2_orm.png::CompressedTexture2D::5717749051285160098::1710423206::1710423206::1::::<><>::
+::res://assets/mesh_libraries/::1710422879
+labratory.meshlib::MeshLibrary::2316535103658793231::1710422879::0::1::::<><>::
 ::res://assets/ui/::1710411911
 hp_orb.png::CompressedTexture2D::6306126797979074136::1710411880::1710411911::1::::<><>::
 worm_sprite.png::CompressedTexture2D::7656511310206743361::1710411880::1710411911::1::::<><>::
 ::res://entities/::1710411880
 health_component.gd::GDScript::-1::1710411880::0::1::::HealthComponent<>Node<>::
-::res://entities/enemy/::1710412926
-crab_enemy.tscn::PackedScene::1249361430337974052::1710412926::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://brty8rabhgmbo::::res://assets/3d_models/Crab.glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
+::res://entities/enemy/::1710414830
+crab_enemy.tscn::PackedScene::1249361430337974052::1710414830::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://brty8rabhgmbo::::res://assets/3d_models/Crab.glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
 enemy.gd::GDScript::-1::1710411880::0::1::::Enemy<>CharacterBody3D<>::
 EnemyHealthBar.gd::GDScript::-1::1710411880::0::1::::EnemyHealthBar<>MarginContainer<>::
-wormenemy.tscn::PackedScene::3063048961593448063::1710412926::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://csuhbe8yrln5r::::res://models/Worm (1).glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
-::res://entities/player/::1710412926
+wormenemy.tscn::PackedScene::3063048961593448063::1710414830::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://csuhbe8yrln5r::::res://models/Worm (1).glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
+::res://entities/player/::1710422879
 hporb.gd::GDScript::-1::1710411880::0::1::::<>TextureRect<>::
 parasite_counter.gd::GDScript::-1::1710411880::0::1::::<>MarginContainer<>::
-player.gd::GDScript::-1::1710411880::0::1::::Player<>CharacterBody3D<>::
-player.tscn::PackedScene::408142068105554871::1710412926::0::1::::<><>::res://entities/player/player.gd<>uid://bffalfoobcbgh::::res://models/human_model.tscn<>res://entities/player/parasite_counter.gd<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/player/player_health_component.gd<>res://entities/player/player_camera.gd<>uid://dhc4vf1uampt6::::res://assets/ui/worm_sprite.png<>uid://cv3y8tacprvns::::res://assets/ui/hp_orb.png<>res://entities/player/hporb.gd
-player_camera.gd::GDScript::-1::1710412901::0::1::::PlayerCamera<>Camera3D<>::
+player.gd::GDScript::-1::1710422879::0::1::::Player<>CharacterBody3D<>::
+player.tscn::PackedScene::408142068105554871::1710414836::0::1::::<><>::res://entities/player/player.gd<>uid://bffalfoobcbgh::::res://models/human_model.tscn<>res://entities/player/parasite_counter.gd<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/player/player_health_component.gd<>res://entities/player/player_camera.gd<>uid://dhc4vf1uampt6::::res://assets/ui/worm_sprite.png<>uid://cv3y8tacprvns::::res://assets/ui/hp_orb.png<>res://entities/player/hporb.gd
+player_camera.gd::GDScript::-1::1710422879::0::1::::PlayerCamera<>Camera3D<>::
 player_health_component.gd::GDScript::-1::1710411880::0::1::::PlayerHealthComponent<>HealthComponent<>::
 state.gd::GDScript::-1::1710411880::0::1::::PlayerState<>Node<>::
 state_aim.gd::GDScript::-1::1710411880::0::1::::PlayerStateAim<>PlayerState<>::
@@ -79,15 +89,16 @@ InteractionManager.tscn::PackedScene::4867487080033238656::1710411880::0::1::::<
 ::res://Interactions/Interactions area/::1710411880
 Interactions area3D.tscn::PackedScene::1055335952963336894::1710411880::0::1::::<><>::res://Interactions/Interactions area/Interactions Area.gd
 Interactions Area.gd::GDScript::-1::1710411880::0::1::::InteractionArea<>Area3D<>::
-::res://levels/::1710413245
+::res://levels/::1710422879
+environment.gd::GDScript::-1::1710422879::0::1::::<>WorldEnvironment<>::
 level_0_tutorial.tscn::PackedScene::1688333186812678::1710411880::0::1::::<><>::uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://f2ybmriwskkl::::res://entities/player/player.tscn<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb
-level_0_tutorial_grid.tscn::PackedScene::2771826022784187152::1710413245::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://r2g2hb8ycdbg::::res://entities/enemy/crab_enemy.tscn<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb<>uid://8ae8248dqhgx::::res://assets/mesh_libraries/labratory.meshlib
+level_0_tutorial_grid.tscn::PackedScene::2771826022784187152::1710422879::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn<>res://levels/environment.gd<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://r2g2hb8ycdbg::::res://entities/enemy/crab_enemy.tscn<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb<>uid://8ae8248dqhgx::::res://assets/mesh_libraries/labratory.meshlib
 node_3d.tscn::PackedScene::6599526529795107035::1710411880::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn
 test.tscn::PackedScene::6689476705725361535::1710411880::0::1::::<><>::uid://dquafonir56ny::::res://models/laboratory.tres
-::res://levels/tutorial/::1710412926
+::res://levels/tutorial/::1710414830
 tutorial_trigger.gd::GDScript::-1::1710411880::0::1::::TutorialTrigger<>Area3D<>::
-tutorial_trigger.tscn::PackedScene::5570175527756487918::1710412926::0::1::::<><>::res://levels/tutorial/tutorial_trigger.gd
-::res://models/::1710413203
+tutorial_trigger.tscn::PackedScene::5570175527756487918::1710414830::0::1::::<><>::res://levels/tutorial/tutorial_trigger.gd
+::res://models/::1710422879
 Barrel.glb::PackedScene::7087505466097439577::1710411880::1710411911::1::::<><>::
 Barrel_barrel_albedo.jpg::CompressedTexture2D::3651586389140641210::1710411880::1710411911::1::::<><>::
 ComputerConsole.glb::PackedScene::6921037233031496989::1710411880::1710411912::1::::<><>::
@@ -96,9 +107,9 @@ Crab.glb::PackedScene::989450809493201083::1710411880::1710411911::1::::<><>::
 Crab_crab_albedo.jpg::CompressedTexture2D::8322164297724126793::1710411880::1710411911::1::::<><>::
 Human.gd::GDScript::-1::1710411880::0::1::::HumanModel<>Node3D<>::
 Human.glb::PackedScene::4209805268199527801::1710411880::1710411911::1::::<><>::
-human_model.tscn::PackedScene::2747706719268040503::1710411880::0::1::::<><>::uid://bindqdlqx0l7i::::res://assets/3d_models/Human (1).glb<>res://models/Human.gd<>uid://bdmk6awac77g6::::res://assets/3d_models/Pistol.glb
+human_model.tscn::PackedScene::2747706719268040503::1710414830::0::1::::<><>::uid://bindqdlqx0l7i::::res://assets/3d_models/Human (1).glb<>res://models/Human.gd<>uid://bdmk6awac77g6::::res://assets/3d_models/Pistol.glb
 Human_scientist_albedo.jpg::CompressedTexture2D::155620379301062034::1710411880::1710411911::1::::<><>::
-laboratory.tres::MeshLibrary::8323580789135317262::1710413203::0::1::::<><>::
+laboratory.tres::MeshLibrary::8323580789135317262::1710422879::0::1::::<><>::
 labratory_tileset.tscn::PackedScene::6338025155340490489::1710411880::0::1::::<><>::uid://cfkmrs26jjdhr::::res://assets/3d_models/LabratoryTileset.glb<>uid://yx4762nxa7df::::res://assets/3d_models/concrete.tres<>uid://cqsmry5f7563p::::res://assets/3d_models/tiles_2.tres
 Worm (1).glb::PackedScene::6077955174880813289::1710411880::1710411911::1::::<><>::
 Worm (1)_maggot_albedo.jpg::CompressedTexture2D::4988440881205940606::1710411880::1710411911::1::::<><>::

@@ -21,12 +21,10 @@ sky_material = SubResource("ProceduralSkyMaterial_4gxg7")
 background_mode = 2
 sky = SubResource("Sky_qy6ea")
 ambient_light_sky_contribution = 0.15
-reflected_light_source = 1
 tonemap_mode = 2
 tonemap_exposure = 0.9
 glow_enabled = true
 glow_strength = 1.25
-fog_enabled = true
 fog_light_color = Color(0, 0, 0, 1)
 fog_density = 0.1
 adjustment_enabled = true
@@ -42,7 +40,6 @@ polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Arr
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_ubl1k")
 script = ExtResource("1_r4rmq")
-active = true
 
 [node name="Objects" type="Node" parent="."]
 
