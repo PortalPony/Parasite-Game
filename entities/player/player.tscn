@@ -1,0 +1,139 @@
+[gd_scene load_steps=18 format=3 uid="uid://f2ybmriwskkl"]
+
+[ext_resource type="Script" path="res://entities/player/player.gd" id="1_lmvu0"]
+[ext_resource type="PackedScene" uid="uid://bffalfoobcbgh" path="res://models/human_model.tscn" id="2_m0201"]
+[ext_resource type="Script" path="res://entities/player/parasite_counter.gd" id="3_5q7kp"]
+[ext_resource type="Script" path="res://entities/enemy/EnemyHealthBar.gd" id="3_6tll0"]
+[ext_resource type="Script" path="res://entities/player/player_health_component.gd" id="3_kw3co"]
+[ext_resource type="Script" path="res://entities/player/player_camera.gd" id="3_t1fhh"]
+[ext_resource type="Texture2D" uid="uid://dhc4vf1uampt6" path="res://assets/ui/worm_sprite.png" id="5_mrqfp"]
+[ext_resource type="Texture2D" uid="uid://cv3y8tacprvns" path="res://assets/ui/hp_orb.png" id="6_pvmtb"]
+[ext_resource type="Script" path="res://entities/player/hporb.gd" id="8_eiqgn"]
+
+[sub_resource type="Gradient" id="Gradient_vdgue"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jmd8g"]
+gradient = SubResource("Gradient_vdgue")
+
+[sub_resource type="Gradient" id="Gradient_j0cn0"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_na15q"]
+gradient = SubResource("Gradient_j0cn0")
+
+[sub_resource type="Gradient" id="Gradient_t4fcd"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3lxab"]
+gradient = SubResource("Gradient_t4fcd")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w01ao"]
+size = Vector3(0.5, 2, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jiu6q"]
+size = Vector3(0.4, 0.4, 0.4)
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_lmvu0")
+
+[node name="HumanModel" parent="." instance=ExtResource("2_m0201")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.707107, -0.612372, 0.353553, 0, 0.5, 0.866025, -0.707107, -0.612372, 0.353553, 1.6, 5, 1.2)
+fov = 60.0
+size = 12.0
+near = 0.9
+far = 100.0
+script = ExtResource("3_t1fhh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+
+[node name="ParasiteCounter" type="MarginContainer" parent="Camera3D/CanvasLayer" node_paths=PackedStringArray("player_health_component")]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_bottom = 40
+script = ExtResource("3_5q7kp")
+player_health_component = NodePath("../../../PlayerHealthComponent")
+
+[node name="VBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/ParasiteCounter"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Camera3D/CanvasLayer/ParasiteCounter/VBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("5_mrqfp")
+
+[node name="HealthBar" type="MarginContainer" parent="Camera3D/CanvasLayer" node_paths=PackedStringArray("health_component")]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+offset_right = -380.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 90
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 90
+theme_override_constants/margin_bottom = 30
+script = ExtResource("3_6tll0")
+health_component = NodePath("../../../PlayerHealthComponent")
+
+[node name="Under" type="TextureProgressBar" parent="Camera3D/CanvasLayer/HealthBar"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+max_value = 10.0
+step = 0.01
+value = 5.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_jmd8g")
+texture_progress = SubResource("GradientTexture1D_na15q")
+
+[node name="Over" type="TextureProgressBar" parent="Camera3D/CanvasLayer/HealthBar"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+max_value = 10.0
+step = 0.01
+value = 4.0
+nine_patch_stretch = true
+texture_progress = SubResource("GradientTexture1D_3lxab")
+
+[node name="HPOrb" type="TextureRect" parent="Camera3D/CanvasLayer" node_paths=PackedStringArray("health_component")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -120.0
+offset_right = 120.0
+grow_vertical = 0
+texture = ExtResource("6_pvmtb")
+script = ExtResource("8_eiqgn")
+health_component = NodePath("../../../PlayerHealthComponent")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_w01ao")
+
+[node name="InfestPoint" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06, 1.6, 0)
+
+[node name="PlayerHealthComponent" type="Node" parent="."]
+script = ExtResource("3_kw3co")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.69269, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_jiu6q")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
