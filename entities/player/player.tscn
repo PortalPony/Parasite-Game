@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://f2ybmriwskkl"]
+[gd_scene load_steps=22 format=3 uid="uid://f2ybmriwskkl"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_lmvu0"]
 [ext_resource type="PackedScene" uid="uid://bffalfoobcbgh" path="res://models/human_model.tscn" id="2_m0201"]
@@ -9,6 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://dhc4vf1uampt6" path="res://assets/ui/worm_sprite.png" id="5_mrqfp"]
 [ext_resource type="Texture2D" uid="uid://cv3y8tacprvns" path="res://assets/ui/hp_orb.png" id="6_pvmtb"]
 [ext_resource type="Script" path="res://entities/player/hporb.gd" id="8_eiqgn"]
+[ext_resource type="AudioStream" uid="uid://b8g350prpubqp" path="res://assets/sfx/shoot_dry_fire.wav" id="10_mjutg"]
+[ext_resource type="AudioStream" uid="uid://bbb7dnq4or7ki" path="res://assets/sfx/shoot.wav" id="11_acc0a"]
+[ext_resource type="AudioStream" uid="uid://blo7jbw31ne51" path="res://assets/sfx/player_damage.wav" id="12_nd6rd"]
+[ext_resource type="AudioStream" uid="uid://cboaprg4uti3a" path="res://assets/sfx/player_die.wav" id="13_26rjh"]
 
 [sub_resource type="Gradient" id="Gradient_vdgue"]
 offsets = PackedFloat32Array(0)
@@ -137,3 +141,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.69269, 0)
 shape = SubResource("BoxShape3D_jiu6q")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="GunClick" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("10_mjutg")
+
+[node name="GunFire" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("11_acc0a")
+
+[node name="Hurt" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_nd6rd")
+
+[node name="Die" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_26rjh")

@@ -4,7 +4,7 @@ extends CharacterBody3D
 
 const SPEED: int = 6
 
-var bullets: int = 10
+var bullets: int = 4
 
 var current_state: PlayerState
 
@@ -19,6 +19,7 @@ var cursor_pos: Vector3 = Vector3(1, 0, 1)
 func _ready() -> void:
 	current_state = PlayerStateIdle.new(self, human_model)
 	health_component.died.connect(on_died)
+	health_component.damaged.connect(on_damaged)
 
 
 func _input(event: InputEvent) -> void:
@@ -68,6 +69,8 @@ func change_state(new_state: PlayerState) -> void:
 
 func on_died() -> void:
 	change_state(PlayerStateDead.new(self, human_model))
+	$Hurt.stop()
+	$Die.play()
 	velocity = Vector3.ZERO
 
 
@@ -84,8 +87,11 @@ func add_bullets(value: int) -> void:
 
 
 func shoot() -> void:
-	if not bullets > 0:
+	if bullets < 1:
+		$GunClick.play()
 		return
+	
+	$GunFire.play()
 	
 	add_bullets(-1)
 	
@@ -94,4 +100,8 @@ func shoot() -> void:
 	if mouse_object is Enemy:
 		mouse_object as Enemy
 		mouse_object.take_damage(1)
+
+
+func on_damaged() -> void:
+	$Hurt.play()
 

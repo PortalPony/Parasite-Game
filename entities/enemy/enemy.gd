@@ -9,7 +9,7 @@ var attacking: bool = false
 @onready var model: Node3D = $Model
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 
-@export var attack_range: int = 1
+@export var attack_range: float = 1.0
 @export var player: CharacterBody3D
 @export var speed: int = 0
 
@@ -57,6 +57,7 @@ func attack() -> void:
 
 
 func take_damage(value: int) -> void:
+	$Shot.play()
 	$HealthComponent.take_damage(value)
 
 
