@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://odkd0qefduln"
-path="res://.godot/imported/Crab.glb-862be6bca6606653d24cbc507c50040c.scn"
+path="res://.godot/imported/Crab.glb-747715ea134869ee3cfd3c2f323446b1.scn"
 
 [deps]
 
-source_file="res://models/Crab.glb"
-dest_files=["res://.godot/imported/Crab.glb-862be6bca6606653d24cbc507c50040c.scn"]
+source_file="res://Models/Crab.glb"
+dest_files=["res://.godot/imported/Crab.glb-747715ea134869ee3cfd3c2f323446b1.scn"]
 
 [params]
 

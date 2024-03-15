@@ -1,3 +1,4 @@
+res://PauseMenu
 res://assets/3d_models
 res://models
 res://levels
@@ -6,5 +7,4 @@ res://Models
 res://
 res://_prototype
 res://Interactions
-res://Entities
 res://Interactions/Interactions area
