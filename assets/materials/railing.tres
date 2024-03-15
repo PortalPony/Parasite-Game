@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://krgdspvy834l" path="res://assets/materials/concrete_normal.png" id="2_55u6j"]
 
 [resource]
-albedo_color = Color(1, 0.65098, 0.156863, 1)
+albedo_color = Color(1, 0.784314, 0.278431, 1)
 albedo_texture = ExtResource("1_8g1d4")
 orm_texture = ExtResource("1_8g1d4")
 normal_enabled = true

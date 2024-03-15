@@ -1,9 +1,10 @@
-res://assets/mesh_libraries/labratory.meshlib
-res://levels/level_0_tutorial_grid.tscn
-res://assets/materials/railing.tres
+res://entities/enemy/wormenemy.tscn
 res://assets/materials/tiles_2.tres
+res://assets/materials/railing.tres
+res://levels/level_0_tutorial_grid.tscn
 res://levels/tutorial/tutorial_trigger.tscn
 res://entities/player/player.tscn
-res://entities/enemy/wormenemy.tscn
 res://entities/enemy/crab_enemy.tscn
 res://models/human_model.tscn
+res://assets/props/lamp.tscn
+res://assets/props/computer_console.tscn
