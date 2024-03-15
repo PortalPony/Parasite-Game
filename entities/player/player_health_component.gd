@@ -44,12 +44,11 @@ func add_parasite() -> void:
 
 
 ## decrement the parasite count
-func remove_parasite() -> void:
+func remove_parasites() -> void:
 	if parasite_count < 1:
 		return
 	cured.emit()
-	parasite_count -= 1
-	
+	parasite_count = 0
 
 
 func _on_damage_timer_timeout() -> void:

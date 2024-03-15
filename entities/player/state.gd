@@ -12,15 +12,15 @@ func _init(p: Player, m: HumanModel) -> void:
 	model = m
 
 
-func handle_input(event: InputEvent) -> PlayerState:
+func handle_input(_event: InputEvent) -> PlayerState:
 	return null
 
 
-func calculate_velocity(from: Vector3, to: Vector3) -> PlayerState:
+func calculate_velocity(_from: Vector3, _to: Vector3) -> PlayerState:
 	return null
 
 
-func handle_aim(at_enemy: bool) -> PlayerState:
+func handle_aim(_at_enemy: bool) -> PlayerState:
 	return null
 
 

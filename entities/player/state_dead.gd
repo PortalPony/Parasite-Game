@@ -3,7 +3,7 @@ class_name PlayerStateDead
 extends PlayerState
 
 
-func orientate_model(cursor_position) -> void:
+func orientate_model(_cursor_position) -> void:
 	pass
 
 
