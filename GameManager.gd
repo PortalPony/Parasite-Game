@@ -1,6 +1,6 @@
-extends Node
-
 class_name GameManager
+
+extends Node
 
 signal  toggle_game_paused(is_paused : bool)
 
