@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710462556
-default_bus_layout.tres::AudioBusLayout::2204484659745822195::1710424505::0::1::::<><>::
-LabratoryTileset.glb::PackedScene::732639495614789493::1710422879::1710423256::1::::<><>::
-::res://assets/::1710423188
+::res://::1710464565
+default_bus_layout.tres::AudioBusLayout::2204484659745822195::1710463565::0::1::::<><>::
+LabratoryTileset.glb::PackedScene::732639495614789493::1710463564::1710463564::1::::<><>::
+::res://assets/::1710463564
 ::res://assets/3d_models/::1710412916
 AmmoBox.glb::PackedScene::7830635242804850472::1710411880::1710411912::1::::<><>::
 AmmoBox_pistol_albedo.jpg::CompressedTexture2D::8464902252922228603::1710411880::1710411911::1::::<><>::
@@ -49,37 +49,42 @@ Trashcan.glb::PackedScene::2276007354446368023::1710411880::1710411911::1::::<><
 Trashcan_trashcan_albedo.jpg::CompressedTexture2D::4663900398985712221::1710411880::1710411911::1::::<><>::
 Worm.glb::PackedScene::1671267552216634175::1710411880::1710411911::1::::<><>::
 Worm_maggot_albedo.jpg::CompressedTexture2D::7831838959779871542::1710411880::1710411911::1::::<><>::
-::res://assets/materials/::1710424512
-concrete.tres::ORMMaterial3D::-1::1710423206::0::1::::<><>::
-concrete_albedo.png::CompressedTexture2D::4777813996799008668::1710423206::1710423206::1::::<><>::
-concrete_normal.png::CompressedTexture2D::737353487117568701::1710423206::1710423206::1::::<><>::
-railing.tres::ORMMaterial3D::2034036771182061515::1710424512::0::1::::<><>::uid://cacn5sv4ccb5m::::res://assets/materials/concrete_albedo.png<>uid://krgdspvy834l::::res://assets/materials/concrete_normal.png
-tiles_2.tres::StandardMaterial3D::6099238764069352032::1710423355::0::1::::<><>::uid://de542jujygylj::::res://assets/materials/tiles_2_albedo.png<>uid://cnpyqyf7t05dm::::res://assets/materials/tiles_2_orm.png<>uid://c4t8fx46x8kxt::::res://assets/materials/tiles_2_normal.png
-tiles_2_albedo.png::CompressedTexture2D::7503758271526380079::1710423206::1710423206::1::::<><>::
-tiles_2_heightmap.png::CompressedTexture2D::6509388337371890982::1710423206::1710423206::1::::<><>::
-tiles_2_normal.png::CompressedTexture2D::6849554854224019425::1710423206::1710423206::1::::<><>::
-tiles_2_orm.png::CompressedTexture2D::5717749051285160098::1710423206::1710423206::1::::<><>::
-::res://assets/mesh_libraries/::1710423302
-labratory.meshlib::MeshLibrary::2316535103658793231::1710423302::0::1::::<><>::res://assets/materials/tiles_2.tres<>res://assets/materials/concrete.tres<>uid://38kj2pbjj7el::::res://assets/materials/railing.tres
+::res://assets/materials/::1710463596
+concrete.tres::ORMMaterial3D::1733832544406343227::1710463564::0::1::::<><>::uid://cacn5sv4ccb5m::::res://materials/concrete_albedo.png<>uid://krgdspvy834l::::res://materials/concrete_normal.png
+concrete_albedo.png::CompressedTexture2D::4777813996799008668::1710463564::1710463564::1::::<><>::
+concrete_normal.png::CompressedTexture2D::737353487117568701::1710463564::1710463564::1::::<><>::
+railing.tres::ORMMaterial3D::2034036771182061515::1710463596::0::1::::<><>::uid://cacn5sv4ccb5m::::res://assets/materials/concrete_albedo.png<>uid://krgdspvy834l::::res://assets/materials/concrete_normal.png
+tiles_2.tres::StandardMaterial3D::6099238764069352032::1710463596::0::1::::<><>::uid://de542jujygylj::::res://assets/materials/tiles_2_albedo.png<>uid://cnpyqyf7t05dm::::res://assets/materials/tiles_2_orm.png<>uid://c4t8fx46x8kxt::::res://assets/materials/tiles_2_normal.png
+tiles_2_albedo.png::CompressedTexture2D::7503758271526380079::1710463564::1710463564::1::::<><>::
+tiles_2_heightmap.png::CompressedTexture2D::6509388337371890982::1710463564::1710463564::1::::<><>::
+tiles_2_normal.png::CompressedTexture2D::6849554854224019425::1710463564::1710463564::1::::<><>::
+tiles_2_orm.png::CompressedTexture2D::5717749051285160098::1710463564::1710463564::1::::<><>::
+::res://assets/mesh_libraries/::1710463564
+labratory.meshlib::MeshLibrary::2316535103658793231::1710463564::0::1::::<><>::res://assets/materials/tiles_2.tres<>res://assets/materials/concrete.tres<>uid://38kj2pbjj7el::::res://assets/materials/railing.tres
+::res://assets/props/::1710463596
+coffe_table.tscn::PackedScene::5674120866633962314::1710463564::0::1::::<><>::uid://dois3l7oa7qum::::res://assets/3d_models/CoffeTable.glb
+computer_console.tscn::PackedScene::6052294516268494732::1710463596::0::1::::<><>::uid://c7t7odwo35wh2::::res://assets/3d_models/ComputerConsole.glb
+couch.tscn::PackedScene::7466906839300505920::1710463564::0::1::::<><>::uid://biue8ti28n6f7::::res://assets/3d_models/Couch.glb
+lamp.tscn::PackedScene::8073781390715205898::1710463596::0::1::::<><>::uid://c6na564n87t5m::::res://assets/3d_models/Lamp.glb
 ::res://assets/ui/::1710411911
 hp_orb.png::CompressedTexture2D::6306126797979074136::1710411880::1710411911::1::::<><>::
 worm_sprite.png::CompressedTexture2D::7656511310206743361::1710411880::1710411911::1::::<><>::
-::res://audio/::1710424229
-::res://audio/ambience/::1710424434
-Cave.wav::AudioStreamWAV::2513118910458224366::1594329218::1710424434::1::::<><>::
+::res://audio/::1710463564
+::res://audio/ambience/::1710463565
+Cave.wav::AudioStreamWAV::2513118910458224366::1710463565::1710463565::1::::<><>::
 ::res://entities/::1710411880
 health_component.gd::GDScript::-1::1710411880::0::1::::HealthComponent<>Node<>::
-::res://entities/enemy/::1710424518
-crab_enemy.tscn::PackedScene::1249361430337974052::1710424438::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://brty8rabhgmbo::::res://assets/3d_models/Crab.glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
+::res://entities/enemy/::1710463596
+crab_enemy.tscn::PackedScene::1249361430337974052::1710463596::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://brty8rabhgmbo::::res://assets/3d_models/Crab.glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
 enemy.gd::GDScript::-1::1710411880::0::1::::Enemy<>CharacterBody3D<>::
 EnemyHealthBar.gd::GDScript::-1::1710411880::0::1::::EnemyHealthBar<>MarginContainer<>::
-wormenemy.tscn::PackedScene::3063048961593448063::1710424518::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://csuhbe8yrln5r::::res://models/Worm (1).glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
-::res://entities/player/::1710424438
+wormenemy.tscn::PackedScene::3063048961593448063::1710463596::0::1::::<><>::res://entities/enemy/enemy.gd<>uid://csuhbe8yrln5r::::res://models/Worm (1).glb<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/health_component.gd
+::res://entities/player/::1710463596
 hporb.gd::GDScript::-1::1710411880::0::1::::<>TextureRect<>::
 parasite_counter.gd::GDScript::-1::1710411880::0::1::::<>MarginContainer<>::
-player.gd::GDScript::-1::1710422879::0::1::::Player<>CharacterBody3D<>::
-player.tscn::PackedScene::408142068105554871::1710424438::0::1::::<><>::res://entities/player/player.gd<>uid://bffalfoobcbgh::::res://models/human_model.tscn<>res://entities/player/parasite_counter.gd<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/player/player_health_component.gd<>res://entities/player/player_camera.gd<>uid://dhc4vf1uampt6::::res://assets/ui/worm_sprite.png<>uid://cv3y8tacprvns::::res://assets/ui/hp_orb.png<>res://entities/player/hporb.gd
-player_camera.gd::GDScript::-1::1710422879::0::1::::PlayerCamera<>Camera3D<>::
+player.gd::GDScript::-1::1710463565::0::1::::Player<>CharacterBody3D<>::
+player.tscn::PackedScene::408142068105554871::1710463596::0::1::::<><>::res://entities/player/player.gd<>uid://bffalfoobcbgh::::res://models/human_model.tscn<>res://entities/player/parasite_counter.gd<>res://entities/enemy/EnemyHealthBar.gd<>res://entities/player/player_health_component.gd<>res://entities/player/player_camera.gd<>uid://dhc4vf1uampt6::::res://assets/ui/worm_sprite.png<>uid://cv3y8tacprvns::::res://assets/ui/hp_orb.png<>res://entities/player/hporb.gd
+player_camera.gd::GDScript::-1::1710463565::0::1::::PlayerCamera<>Camera3D<>::
 player_health_component.gd::GDScript::-1::1710411880::0::1::::PlayerHealthComponent<>HealthComponent<>::
 state.gd::GDScript::-1::1710411880::0::1::::PlayerState<>Node<>::
 state_aim.gd::GDScript::-1::1710411880::0::1::::PlayerStateAim<>PlayerState<>::
@@ -93,16 +98,16 @@ InteractionManager.tscn::PackedScene::4867487080033238656::1710411880::0::1::::<
 ::res://Interactions/Interactions area/::1710411880
 Interactions area3D.tscn::PackedScene::1055335952963336894::1710411880::0::1::::<><>::res://Interactions/Interactions area/Interactions Area.gd
 Interactions Area.gd::GDScript::-1::1710411880::0::1::::InteractionArea<>Area3D<>::
-::res://levels/::1710424453
-environment.gd::GDScript::-1::1710422879::0::1::::<>WorldEnvironment<>::
+::res://levels/::1710463731
+environment.gd::GDScript::-1::1710463565::0::1::::<>WorldEnvironment<>::
 level_0_tutorial.tscn::PackedScene::1688333186812678::1710411880::0::1::::<><>::uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://f2ybmriwskkl::::res://entities/player/player.tscn<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb
-level_0_tutorial_grid.tscn::PackedScene::2771826022784187152::1710424453::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn<>res://levels/environment.gd<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://r2g2hb8ycdbg::::res://entities/enemy/crab_enemy.tscn<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb<>uid://8ae8248dqhgx::::res://assets/mesh_libraries/labratory.meshlib<>uid://bb2mx3xja6uyw::::res://audio/ambience/Cave.wav
+level_0_tutorial_grid.tscn::PackedScene::2771826022784187152::1710463731::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn<>res://levels/environment.gd<>uid://c83dm3f345vko::::res://assets/3d_models/FilingCabinet.glb<>uid://4ijamvjrowml::::res://assets/3d_models/OfficeChair.glb<>uid://7orrj68ap5jv::::res://assets/3d_models/Trashcan.glb<>uid://begnnugvcnukh::::res://assets/3d_models/Barrel.glb<>uid://r2g2hb8ycdbg::::res://entities/enemy/crab_enemy.tscn<>uid://bjv077a40lict::::res://entities/enemy/wormenemy.tscn<>uid://clmh8htdc7l87::::res://levels/tutorial/tutorial_trigger.tscn<>uid://djthohv70kgsm::::res://assets/3d_models/AmmoBox.glb<>uid://8ae8248dqhgx::::res://assets/mesh_libraries/labratory.meshlib<>uid://bb2mx3xja6uyw::::res://audio/ambience/Cave.wav<>uid://csh1n23nig5js::::res://assets/props/computer_console.tscn<>uid://dena4nu0fvsoe::::res://assets/props/couch.tscn<>uid://cm3t7ats5yukg::::res://assets/props/coffe_table.tscn<>uid://dna8885q4xnck::::res://assets/props/lamp.tscn
 node_3d.tscn::PackedScene::6599526529795107035::1710411880::0::1::::<><>::uid://f2ybmriwskkl::::res://entities/player/player.tscn
 test.tscn::PackedScene::6689476705725361535::1710411880::0::1::::<><>::uid://dquafonir56ny::::res://models/laboratory.tres
-::res://levels/tutorial/::1710424438
+::res://levels/tutorial/::1710463596
 tutorial_trigger.gd::GDScript::-1::1710411880::0::1::::TutorialTrigger<>Area3D<>::
-tutorial_trigger.tscn::PackedScene::5570175527756487918::1710424438::0::1::::<><>::res://levels/tutorial/tutorial_trigger.gd
-::res://models/::1710424438
+tutorial_trigger.tscn::PackedScene::5570175527756487918::1710463596::0::1::::<><>::res://levels/tutorial/tutorial_trigger.gd
+::res://models/::1710463596
 Barrel.glb::PackedScene::7087505466097439577::1710411880::1710411911::1::::<><>::
 Barrel_barrel_albedo.jpg::CompressedTexture2D::3651586389140641210::1710411880::1710411911::1::::<><>::
 ComputerConsole.glb::PackedScene::6921037233031496989::1710411880::1710411912::1::::<><>::
@@ -111,9 +116,9 @@ Crab.glb::PackedScene::989450809493201083::1710411880::1710411911::1::::<><>::
 Crab_crab_albedo.jpg::CompressedTexture2D::8322164297724126793::1710411880::1710411911::1::::<><>::
 Human.gd::GDScript::-1::1710411880::0::1::::HumanModel<>Node3D<>::
 Human.glb::PackedScene::4209805268199527801::1710411880::1710411911::1::::<><>::
-human_model.tscn::PackedScene::2747706719268040503::1710424438::0::1::::<><>::uid://bindqdlqx0l7i::::res://assets/3d_models/Human (1).glb<>res://models/Human.gd<>uid://bdmk6awac77g6::::res://assets/3d_models/Pistol.glb
+human_model.tscn::PackedScene::2747706719268040503::1710463596::0::1::::<><>::uid://bindqdlqx0l7i::::res://assets/3d_models/Human (1).glb<>res://models/Human.gd<>uid://bdmk6awac77g6::::res://assets/3d_models/Pistol.glb
 Human_scientist_albedo.jpg::CompressedTexture2D::155620379301062034::1710411880::1710411911::1::::<><>::
-laboratory.tres::MeshLibrary::8323580789135317262::1710422879::0::1::::<><>::
+laboratory.tres::MeshLibrary::8323580789135317262::1710463565::0::1::::<><>::
 labratory_tileset.tscn::PackedScene::6338025155340490489::1710411880::0::1::::<><>::uid://cfkmrs26jjdhr::::res://assets/3d_models/LabratoryTileset.glb<>uid://yx4762nxa7df::::res://assets/3d_models/concrete.tres<>uid://cqsmry5f7563p::::res://assets/3d_models/tiles_2.tres
 Worm (1).glb::PackedScene::6077955174880813289::1710411880::1710411911::1::::<><>::
 Worm (1)_maggot_albedo.jpg::CompressedTexture2D::4988440881205940606::1710411880::1710411911::1::::<><>::
