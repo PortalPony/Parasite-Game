@@ -1,5 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://bfqxtmqujiusm"]
 
+
 [ext_resource type="PackedScene" uid="uid://f2ybmriwskkl" path="res://entities/player/player.tscn" id="1_gco3w"]
 [ext_resource type="Script" path="res://levels/environment.gd" id="1_r4rmq"]
 [ext_resource type="PackedScene" uid="uid://c83dm3f345vko" path="res://assets/3d_models/FilingCabinet.glb" id="2_fvamm"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://r2g2hb8ycdbg" path="res://entities/enemy/crab_enemy.tscn" id="6_31lqm"]
 [ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/wormenemy.tscn" id="6_ybord"]
 [ext_resource type="PackedScene" uid="uid://clmh8htdc7l87" path="res://levels/tutorial/tutorial_trigger.tscn" id="7_3stup"]
+
 [ext_resource type="PackedScene" uid="uid://djthohv70kgsm" path="res://assets/3d_models/AmmoBox.glb" id="8_v2ftc"]
 [ext_resource type="MeshLibrary" uid="uid://8ae8248dqhgx" path="res://assets/mesh_libraries/labratory.meshlib" id="9_wrbf5"]
 [ext_resource type="AudioStream" uid="uid://bb2mx3xja6uyw" path="res://audio/ambience/Cave.wav" id="12_f01ij"]
@@ -16,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dena4nu0fvsoe" path="res://assets/props/couch.tscn" id="14_ngy45"]
 [ext_resource type="PackedScene" uid="uid://cm3t7ats5yukg" path="res://assets/props/coffe_table.tscn" id="15_ua4hx"]
 [ext_resource type="PackedScene" uid="uid://dna8885q4xnck" path="res://assets/props/lamp.tscn" id="16_gurrc"]
+
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4gxg7"]
 
@@ -169,6 +172,7 @@ On you trot, best get looking for the key...
 
 [node name="interactable" type="Node" parent="."]
 
+
 [node name="AmmoBox3" parent="interactable" instance=ExtResource("8_v2ftc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4431, 0.0882983, -10.8396)
 
@@ -249,3 +253,4 @@ shadow_enabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_f01ij")
 autoplay = true
+

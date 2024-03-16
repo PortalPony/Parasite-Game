@@ -13,7 +13,7 @@ func handle_input(event: InputEvent) -> PlayerState:
 	return null
 
 
-func _move_to(pos: Vector3) -> Vector3:
+func _move_to(_pos: Vector3) -> Vector3:
 	return Vector3.ZERO
 
 

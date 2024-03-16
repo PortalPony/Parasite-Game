@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bo2vdwlrt573u"
-path="res://.godot/imported/Worm.glb-158b82550437b49b6ac2692ed2eacc2f.scn"
+path="res://.godot/imported/Worm.glb-3e8158c4d6ee8ed7c84e2c762c3ebf36.scn"
 
 [deps]
 
-source_file="res://models/Worm.glb"
-dest_files=["res://.godot/imported/Worm.glb-158b82550437b49b6ac2692ed2eacc2f.scn"]
+source_file="res://Models/Worm.glb"
+dest_files=["res://.godot/imported/Worm.glb-3e8158c4d6ee8ed7c84e2c762c3ebf36.scn"]
 
 [params]
 

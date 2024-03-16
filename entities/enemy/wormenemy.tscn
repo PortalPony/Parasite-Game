@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bjv077a40lict"]
+[gd_scene load_steps=14 format=3 uid="uid://bjv077a40lict"]
 
 [ext_resource type="Script" path="res://entities/enemy/enemy.gd" id="1_tm2i6"]
 [ext_resource type="PackedScene" uid="uid://csuhbe8yrln5r" path="res://models/Worm (1).glb" id="2_0geah"]
 [ext_resource type="Script" path="res://entities/enemy/EnemyHealthBar.gd" id="3_j4q87"]
 [ext_resource type="Script" path="res://entities/health_component.gd" id="3_yj1ft"]
+[ext_resource type="AudioStream" uid="uid://qhxystnjovbr" path="res://assets/sfx/worm_shot.wav" id="5_6x5oa"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ic3oa"]
 size = Vector3(1, 1, 2)
@@ -34,6 +35,7 @@ viewport_path = NodePath("EnemyHealthBar")
 
 [node name="WormEnemy" type="CharacterBody3D"]
 script = ExtResource("1_tm2i6")
+attack_range = 1.2
 speed = 3
 
 [node name="Model" parent="." instance=ExtResource("2_0geah")]
@@ -92,3 +94,6 @@ max_hp = 3
 
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]
 radius = 1.0
+
+[node name="Shot" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_6x5oa")

@@ -2,9 +2,10 @@ class_name Player
 
 extends CharacterBody3D
 
+const AMMO_AMMOUNT: int = 10
 const SPEED: int = 6
 
-var bullets: int = 10
+var bullets: int = 0
 
 var current_state: PlayerState
 
@@ -19,6 +20,8 @@ var cursor_pos: Vector3 = Vector3(1, 0, 1)
 func _ready() -> void:
 	current_state = PlayerStateIdle.new(self, human_model)
 	health_component.died.connect(on_died)
+	health_component.damaged.connect(on_damaged)
+	EventBus.interacable_collected.connect(_on_interactable_collected)
 
 
 func _input(event: InputEvent) -> void:
@@ -28,7 +31,7 @@ func _input(event: InputEvent) -> void:
 		change_state(new_state)
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	# Pathfinding
 	if Input.is_action_pressed("move"):
 		if not camera.mouse_object():
@@ -68,6 +71,8 @@ func change_state(new_state: PlayerState) -> void:
 
 func on_died() -> void:
 	change_state(PlayerStateDead.new(self, human_model))
+	$Hurt.stop()
+	$Die.play()
 	velocity = Vector3.ZERO
 
 
@@ -80,14 +85,16 @@ func get_infest_point() -> Vector3:
 
 
 func add_bullets(value: int) -> void:
-	bullets = clamp(bullets, 0, bullets - 1)
+	bullets += value
+	bullets = clamp(bullets, 0, bullets)
 
 
 func shoot() -> void:
-	print("shot")
-	
-	if not bullets > 0:
+	if bullets < 1:
+		$GunClick.play()
 		return
+	
+	$GunFire.play()
 	
 	add_bullets(-1)
 	
@@ -97,3 +104,17 @@ func shoot() -> void:
 		mouse_object as Enemy
 		mouse_object.take_damage(1)
 
+
+func on_damaged() -> void:
+	$Hurt.play()
+
+func _on_interactable_collected(type: Interactable.TYPE) -> void:
+	# player does need to know the key is collected. The door contains this information
+	if type == Interactable.TYPE.AMMO:
+		add_bullets(AMMO_AMMOUNT)
+	
+	if type == Interactable.TYPE.FIRST_AID:
+		health_component.take_damage(-health_component.max_hp)
+	
+	if type == Interactable.TYPE.MEDS:
+		health_component.remove_parasites()

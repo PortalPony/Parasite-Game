@@ -12,6 +12,9 @@ signal infested
 ## Emitted when the player is cured of a parasite
 signal cured
 
+## Emitted when the player takes damage
+signal damaged
+
 ## Time between the player taking damage
 const COUNTDOWN: float = 10.0
 
@@ -41,16 +44,17 @@ func add_parasite() -> void:
 
 
 ## decrement the parasite count
-func remove_parasite() -> void:
+func remove_parasites() -> void:
 	if parasite_count < 1:
 		return
 	cured.emit()
-	parasite_count -= 1
-	
+	parasite_count = 0
 
 
 func _on_damage_timer_timeout() -> void:
 	if hp < 1:
 		damage_timer.stop()
 		return
+	if parasite_count > 0:
+		damaged.emit()
 	take_damage(parasite_count)

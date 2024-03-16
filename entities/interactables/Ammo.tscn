@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cl7ee1w6crpeb"]
+
+[ext_resource type="PackedScene" uid="uid://djthohv70kgsm" path="res://assets/3d_models/AmmoBox.glb" id="1_a0mwt"]
+[ext_resource type="Script" path="res://entities/interactables/interactable.gd" id="1_yqd2y"]
+[ext_resource type="FontFile" uid="uid://wbds2sgs2m6t" path="res://assets/PARASITE.ttf" id="2_aj6id"]
+[ext_resource type="AudioStream" uid="uid://dlybuiq4stqrn" path="res://assets/sfx/ammo_pickup.wav" id="4_e5n1w"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mio61"]
+height = 1.0
+radius = 1.0
+
+[node name="Ammo" type="Node3D" node_paths=PackedStringArray("mesh")]
+script = ExtResource("1_yqd2y")
+mesh = NodePath("AmmoBox2")
+
+[node name="AmmoBox2" parent="." instance=ExtResource("1_a0mwt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CylinderShape3D_mio61")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(0.707107, -0.612372, 0.353553, 0, 0.5, 0.866025, -0.707107, -0.612372, 0.353553, -0.5, 0.5, -0.5)
+modulate = Color(1, 1, 0, 1)
+font = ExtResource("2_aj6id")
+font_size = 96
+outline_size = 16
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_e5n1w")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
