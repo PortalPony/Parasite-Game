@@ -13,6 +13,7 @@ func ray_query() -> Dictionary:
 	query.from = project_ray_origin(pos)
 	query.to = query.from + project_ray_normal(pos) * RAY_LENGTH
 	
+	#print(space.intersect_ray(query))
 	return space.intersect_ray(query)
 
 

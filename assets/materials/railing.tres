@@ -1,0 +1,14 @@
+[gd_resource type="ORMMaterial3D" load_steps=3 format=3 uid="uid://38kj2pbjj7el"]
+
+[ext_resource type="Texture2D" uid="uid://cacn5sv4ccb5m" path="res://assets/materials/concrete_albedo.png" id="1_8g1d4"]
+[ext_resource type="Texture2D" uid="uid://krgdspvy834l" path="res://assets/materials/concrete_normal.png" id="2_55u6j"]
+
+[resource]
+albedo_color = Color(1, 0.784314, 0.278431, 1)
+albedo_texture = ExtResource("1_8g1d4")
+orm_texture = ExtResource("1_8g1d4")
+normal_enabled = true
+normal_texture = ExtResource("2_55u6j")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+texture_filter = 0
