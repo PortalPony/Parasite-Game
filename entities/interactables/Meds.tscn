@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3hysqvj6fko1"]
+
+[ext_resource type="Script" path="res://entities/interactables/interactable.gd" id="1_uyagc"]
+[ext_resource type="PackedScene" uid="uid://cfhmcr12sxkrb" path="res://assets/3d_models/Pills.glb" id="2_u55j7"]
+[ext_resource type="FontFile" uid="uid://wbds2sgs2m6t" path="res://assets/PARASITE.ttf" id="3_6t454"]
+[ext_resource type="AudioStream" uid="uid://djb7iet5gp3uw" path="res://assets/sfx/pills.wav" id="4_2uk4i"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_n72sk"]
+height = 1.0
+radius = 1.0
+
+[node name="Meds" type="Node3D" node_paths=PackedStringArray("mesh")]
+script = ExtResource("1_uyagc")
+mesh = NodePath("Pills2")
+type = 1
+
+[node name="Pills2" parent="." instance=ExtResource("2_u55j7")]
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CylinderShape3D_n72sk")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(0.707107, -0.612372, 0.353553, 0, 0.5, 0.866025, -0.707107, -0.612372, 0.353553, -0.5, 0.5, -0.5)
+modulate = Color(1, 1, 0, 1)
+font = ExtResource("3_6t454")
+font_size = 96
+outline_size = 16
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_2uk4i")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

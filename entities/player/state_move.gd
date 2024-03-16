@@ -26,7 +26,7 @@ func calculate_velocity(from: Vector3, to: Vector3) -> PlayerState:
 	return null
 
 
-func orientate_model(cursor_position) -> void:
+func orientate_model(_cursor_position) -> void:
 	super.orientate_model(target)
 
 

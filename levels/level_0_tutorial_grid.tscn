@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bfqxtmqujiusm"]
+[gd_scene load_steps=15 format=3 uid="uid://bfqxtmqujiusm"]
 
 [ext_resource type="PackedScene" uid="uid://f2ybmriwskkl" path="res://entities/player/player.tscn" id="1_gco3w"]
 [ext_resource type="PackedScene" uid="uid://c83dm3f345vko" path="res://assets/3d_models/FilingCabinet.glb" id="2_fvamm"]
@@ -8,8 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://r2g2hb8ycdbg" path="res://entities/enemy/crab_enemy.tscn" id="6_31lqm"]
 [ext_resource type="PackedScene" uid="uid://bjv077a40lict" path="res://entities/enemy/wormenemy.tscn" id="6_ybord"]
 [ext_resource type="PackedScene" uid="uid://clmh8htdc7l87" path="res://levels/tutorial/tutorial_trigger.tscn" id="7_3stup"]
-[ext_resource type="PackedScene" uid="uid://djthohv70kgsm" path="res://assets/3d_models/AmmoBox.glb" id="8_v2ftc"]
 [ext_resource type="MeshLibrary" uid="uid://dquafonir56ny" path="res://models/laboratory.tres" id="9_n5ajl"]
+[ext_resource type="PackedScene" uid="uid://cl7ee1w6crpeb" path="res://entities/interactables/Ammo.tscn" id="11_5fa1u"]
+[ext_resource type="PackedScene" uid="uid://b3hysqvj6fko1" path="res://entities/interactables/Meds.tscn" id="11_skv6w"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4gxg7"]
 
@@ -122,11 +123,14 @@ On you trot, best get looking for the key...
 
 [node name="interactable" type="Node" parent="."]
 
-[node name="AmmoBox2" parent="interactable" instance=ExtResource("8_v2ftc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.95394, 0, -17.55)
+[node name="Ammo" parent="interactable" instance=ExtResource("11_5fa1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.43646, 3.8147e-06, -12.4059)
 
-[node name="AmmoBox3" parent="interactable" instance=ExtResource("8_v2ftc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.82629, -1.90735e-06, -15.9703)
+[node name="Ammo2" parent="interactable" instance=ExtResource("11_5fa1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.429896, 3.8147e-06, -14.6242)
+
+[node name="Ammo3" parent="interactable" instance=ExtResource("11_5fa1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.43646, 3.8147e-06, -15.5355)
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("9_n5ajl")
@@ -140,3 +144,6 @@ metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_gco3w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.44952)
+
+[node name="Meds" parent="." instance=ExtResource("11_skv6w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.46495)

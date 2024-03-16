@@ -10,7 +10,10 @@ var aiming: bool = false
 var shoot_cooldown: bool = true
 
 func handle_input(event: InputEvent) -> PlayerState:
-	if event.is_action_pressed("move") and not model.is_animation_playing():
+	if model.is_animation_playing():
+		return null
+	
+	if event.is_action_pressed("move"):
 		return PlayerStateMove.new(player, model)
 	
 	if event.is_action_pressed("shoot"):
@@ -22,7 +25,7 @@ func handle_aim(at_enemy: bool) -> PlayerState:
 	aiming = at_enemy
 	return null
 
-func orientate_model(cursor_position) -> void:
+func orientate_model(_cursor_position) -> void:
 	pass
 
 func enter() -> void:
